@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.3em;
+            font-weight: lighter;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            margin-left: 2em;
+            list-style: circle;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(90, 90, 55);
+        }
+
+        .special {
+            background-color: rgba(180, 50, 36, 40%);
+        }
+
+        .special::before {
+            content: "> ";
+            text-decoration: none;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.452);
+        }
+
+        .special::after {
+            content: " <";
+            text-decoration: none;
+            font-weight: bold;
+            color: rgba(0, 0, 0, 0.452);;
+        }
+
+        .link-list {
+            background-color: rgba(175, 100, 85, 45%);
+            border-radius: 4px;
+            padding: 0 0 5px 3px;
+            width: 400px;
+            height: auto;
+        }
+
+        #main-content {
+            width: 450px;
+            height: auto;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Custom Links</h1>
+        <div id="main-content">
+            <div class="link-list">
+                <h2>Guanabara Links</h2>
+                <ul>
+                    <li><a target="_blank" href="https://gustavoguanabara.github.io">Github Repo</a></li>
+                    <li><a class="special" target="_blank" href="https://youtube.com/cursoemvideo">Youtube Channel</a></li>
+                    <li><a target="_blank" href="https://www.cursoemvideo.com">Cursoemvideo's Site</a></li>
+                </ul>
+            </div>
+            <div class="link-list">
+                <h2>Generic Links</h2>
+                <ul>
+                    <li><a target="_blank" href="https://gustavoguanabara.github.io">Github Repo</a></li>
+                    <li><a class="special" target="_blank" href="https://youtube.com/cursoemvideo">Youtube Channel</a></li>
+                    <li><a target="_blank" href="https://www.cursoemvideo.com">Cursoemvideo's Site</a></li>
+                </ul>
+            </div>
+            <div class="link-list">
+                <h2>Public Links</h2>
+                <ul>
+                    <li><a target="_blank" href="https://gustavoguanabara.github.io">Github Repo</a></li>
+                    <li><a class="special" target="_blank" href="https://youtube.com/cursoemvideo">Youtube Channel</a></li>
+                    <li><a target="_blank" href="https://www.cursoemvideo.com">Cursoemvideo's Site</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

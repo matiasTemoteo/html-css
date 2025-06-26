@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 0px;
+            box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.4);
+        }
+
+        h1 {
+            text-align: center;
+            box-shadow: 1px 1px 4px 1px rgba(20, 10, 20, 40%);
+        }
+
+        h2 {
+            /* Internal shadow */
+            box-shadow: inset 1px 1px 4px 1px rgba(20, 10, 20, 40%);
+        }
+
+        nav {
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 3px 4px 10px 1px rgba(10, 15, 15, 50%);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 3px 1px 7px 0px rgba(0, 0, 0, 0.397);
+        }
+
+        article, section > aside {
+            background-color: lightgray;
+        }
+
+        article > aside {
+            background-color: gray;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="subject">
+            <p>
+                Sports Politician Technology
+            </p>
+            <aside>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, nemo.
+                    Reprehenderit ex voluptate, similique culpa optio minus nisi commodi, impedit
+                    deserunt porro aspernatur maxime, dicta sequi expedita aliquam magni laborum.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, nemo.
+                    Reprehenderit ex voluptate, similique culpa optio minus nisi commodi, impedit
+                    deserunt porro aspernatur maxime, dicta sequi expedita aliquam magni laborum.
+                </p>
+            </aside>
+        </section>
+        <section id="news">
+            <article>
+                <h2>Brazil News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+                    deserunt voluptas obcaecati ex cupiditate, perspiciatis facilis. Quis fugit
+                    ducimus quam quisquam alias tenetur eos quia, quibusdam repudiandae quasi
+                    deleniti perferendis.
+                </p>
+                <aside>
+                    <p>Article writen by Jose da Silva</p>
+                </aside>
+            </article>
+            <article>
+                <h2>World News</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora molestiae alias et,
+                    nam sint id suscipit dolorum. Pariatur error suscipit placeat voluptas fuga, voluptatibus
+                    iusto debitis at eaque ipsam veritatis?
+                </p>
+                <aside>
+                    <p>Article writen by Fernando Fernandez</p>
+                </aside>
+            </article>
+        </section>
+        <aside>
+            <h2>Other Information</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus quasi molestiae sequi libero
+                aliquid corrupti ullam deleniti, dolor quas eius asperiores earum id nam ut, laboriosam animi reprehenderit illo!
+            </p>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus quasi molestiae sequi libero
+                aliquid corrupti ullam deleniti, dolor quas eius asperiores earum id nam ut, laboriosam animi reprehenderit illo!
+            </p>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus quasi molestiae sequi libero
+                aliquid corrupti ullam deleniti, dolor quas eius asperiores earum id nam ut, laboriosam animi reprehenderit illo!
+            </p>
+        </aside>
+    </main>
+    <footer>
+        <p>Developed with cursoemvideo</p>
+    </footer>
+</body>
+</html>

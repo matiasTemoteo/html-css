@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Imagem Dinâmica</title>
+</head>
+<body>
+    <h1>Testing Dynamic Images</h1>
+    <p>
+        Try open this site in different devices to view how the images fit the size
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="images/foto-m.png" type="image/png">
+        <img src="images/foto-g.png" alt="Imagem Felxível">
+    </picture>
+    <h1>Playing audio on html 5</h1>
+    <p>
+        Bellow it is configured a audio to be played here in the site
+    </p>
+    <audio controls preload="metadata">
+        <source src="media/tiburtina.mp3" type="audio/mpeg">
+        <source src="media/retro-bg-music.wav" type="audio/wav">
+        <p>Unfortunatelly, this web browser can't reproduce audio!</p>
+    </audio>
+    <p>
+        Bellow it is an audio player with loop activated
+    </p>
+    <audio controls preload="metadata" loop>
+        <source src="media/retro-bg-music.wav" type="audio/wav">
+        <p>Unfortunatelly, this web browser can't reproduce audio!</p>
+    </audio>
+</body>
+</html>

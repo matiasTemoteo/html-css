@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(90, 185, 140, 50%);
+}
+
+h1 {
+    color: hsl(100, 91%, 9%)
+}
+
+#main-h1 {
+    text-align: center;
+    background-color: #1e640c;
+    color: white;
+}
+
+h2 {
+    color: #1b191b;
+}
+
+.basic {
+    color: rgb(20, 150, 35);
+}
+
+.medium {
+    color: rgb(233, 241, 69);
+}
+
+.advanced {
+    color: darkred;
+}
+
+.highlight {
+    background-color: rgb(154, 156, 106);
+}
+
+.weight-highlight {
+    font-weight: lighter;
+}

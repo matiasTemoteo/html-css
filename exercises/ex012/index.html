@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Vídeos com html 5</title>
+</head>
+<body>
+    <h1>Insertinv videos</h1>
+    <h2>Inserting locally hosted videos</h2>
+    <p>This video is hosted locally in this own server</p>
+    <video width="720" height="480" poster="images/forest-thumb.png" controls>
+        <source src="media/forest-video.mp4" type="video/mp4">
+        <source src="media/forest-video.mkv" type="video/mp4">
+        <source src="media/forest-video.webm" type="video/mp4">
+        <p>This web browser has no compatibilitty with video player</p>
+    </video>
+    <h2>Inserting videos from external source</h2>
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/jPWsBuiy1rE?si=NZgD5S23H7MeNABa"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+    >
+    </iframe>
+</body>
+</html>

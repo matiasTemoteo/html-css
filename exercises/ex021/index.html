@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+
+             /* Full property statement */
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: red;
+
+            /* Shorthand property statement */
+
+            border: 5px solid darkslategray;
+
+            padding: 10px;
+
+            margin: 10px;
+
+            outline: 5px solid brown;
+        }
+
+        #section-1 {
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+
+            /* Shorthand property statement */
+
+            border: 6px double lightblue;
+
+            padding: 5px 4px 8px 10px;
+
+            margin: 15px 2px 2px 15px;
+
+            outline: 8px solid wheat;
+        }
+
+        #section-2 {
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+
+            /* Shorthand property statement */
+
+            border: 10px dashed darkkhaki;
+
+            padding: 20px 15px;
+
+            margin: 25px 15px;
+
+            outline: 4px double red;
+        }
+
+        #section-3 {
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+
+            /* Shorthand property statement */
+
+            border: 10px dashed darkkhaki;
+
+            padding: 20px 15px;
+
+            /* auto to horizontal (right-left) can be used to centerize */
+            margin: 25px auto;
+
+            outline: 4px double red;
+        }
+
+        #link-as-block {
+            display: block;
+        }
+
+        #div-as-inline {
+            display: inline;
+            font-size: 0.8em;
+
+            border: 2px solid blue;
+
+            padding: 2px;
+
+            margin: 0 2px;
+
+            outline: 1px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-level box Example</h1>
+    <p>
+        Paragraphs are also examples of box-level, but the <a href="#">links are examples of inline-level boxes</a>.
+        Weare gonne see how all of this works.
+    </p>
+    <div id="section-1">
+        <p>
+            Other Example
+        </p>
+    </div>
+    <div id="section-2">
+        <p>
+            Other Example
+        </p>
+    </div>
+    <div id="section-3">
+        <p>
+            Other Example but now centered with margin auto
+        </p>
+    </div>
+    <h2>Configuring display</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dolores beatae sit quibusdam magni, veniam nulla in? Quasi
+        <a id="link-as-block" href="#">link (default: display inline, but now it is configured as display block)</a>
+        fugiat ut ipsam expedita quia, nihil eveniet eaque, deleniti
+        quisquam enim ratione rem.
+    </p>
+    <span>content here</span>
+    <div id="div-as-inline">
+        Div (default: display block, but now it is configured as display inline)
+    </div>
+    <span>content here</span>
+</body>
+</html>
