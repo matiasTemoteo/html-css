@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
     <title>Estudos de Iframe</title>
+    <style>
+        iframe#by-css {
+            width: 600px;
+            height: 500px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Testing the use of IFrame</h1>
@@ -17,13 +24,28 @@
     <!--
         Using Iframes to incorporate external content into the
         site, like other wesites, videos, etc.
+        * The Iframe default size is : 300x150.
+        * The css configuration is the high level hierarchy
+        * If some property is defined directly in the tag iframe,
+          the css will cover it if defined.
     -->
     <p>
         Acessing site of
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
-
+        <iframe src="https://www.cursoemvideo.com"
+            frameborder="0" height="500" width="700" scrolling="no"
+        >
+            <a href="https://www.cursoemvideo.com">Curso em vídeo</a>
         </iframe>
         to learn programming.
+    </p>
+    <p>
+        The Guanabara Repos
+        <iframe id="by-css" src="https://gustavoguanabara.github.io"
+            frameborder="1" height="400" width="400" scrolling="yes"
+        >
+            <a href="https://gustavoguanabara.github.io">into github</a>
+        </iframe>
+        is also very cool!
     </p>
     <!--
         This is possible to prevent the content to be incorporated
@@ -35,7 +57,7 @@
         <iframe src="https://www.google.com.br" frameborder="0">
 
         </iframe>
-        is also cool.
+        is also cool. Thats bad it not works in IFrame.
     </p>
 </body>
 </html>
