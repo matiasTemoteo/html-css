@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            background-color: rgba(211, 211, 211, 0.178);
+            font-weight: bold;
+            border: 1px solid black;
+            border-bottom: 0;
+            padding: 5px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .detach {
+            background-color: lightgreen;
+        }
+
+        .col_name {
+            background-color: rgba(240, 128, 128, 0.363);
+        }
+
+        .col_sex_age {
+            background-color: rgba(144, 238, 144, 0.623);
+        }
+
+        .col_job {
+            background-color: rgba(255, 160, 122, 0.452);
+        }
+    </style>
+</head>
+<body>
+    <h1>Table Exercise</h1>
+    <!--
+        We can use 'colgroup' tag inside tables to refer the columns. 
+        And inside the colgroup, we can use the 'col' tag for
+        each column defined, where the tag itself will be attached
+        to the respective column.
+        Once that defined, all the property set to this 'col' tag will
+        reflect for the respective entire column.
+    -->
+
+    <table>
+        <colgroup>
+            <col class="col_name">
+            <col class="col_sex_age" span="2">
+            <col class="col_job">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
+        </tr>
+    </table>
+</body>
+</html>
