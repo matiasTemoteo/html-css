@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Estudos de Iframe</title>
+</head>
+<body>
+    <h1>Testing the use of IFrame</h1>
+    <p>
+        Acessing the
+        <a href="https://www.cursoemvideo.com" target="_blank">
+            Cursoemvideo</a>
+        site to learn programming
+    </p>
+    <!--
+        Using Iframes to incorporate external content into the
+        site, like other wesites, videos, etc.
+    -->
+    <p>
+        Acessing site of
+        <iframe src="https://www.cursoemvideo.com" frameborder="0">
+
+        </iframe>
+        to learn programming.
+    </p>
+    <!--
+        This is possible to prevent the content to be incorporated
+        in iframe of other sites. Bellow, the site 'www.google.com.br'
+        is blocking to be incorporated in the iframe.
+    -->
+    <p>
+        The site of
+        <iframe src="https://www.google.com.br" frameborder="0">
+
+        </iframe>
+        is also cool.
+    </p>
+</body>
+</html>
