@@ -61,7 +61,21 @@
         modi corporis maxime consequuntur soluta molestias itaque veritatis eveniet.
     </p>
 
-    <iframe id="screen" name="frame" src="">
+    <!--
+        It is possible to use property 'srcdoc' to embed HTML content
+        directly inside Iframe
+    -->
+    <iframe id="screen" name="frame"
+        srcdoc="
+            <h1>choose one of the options above!</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At tempore
+                temporibus aliquam, minima quasi, exercitationem cum libero obcaecati
+                modi quod magni doloribus rerum nulla ex itaque, quia odit porro praesentium.
+            </p>
+            <img src='images/html-icon.png' alt=''>
+        "
+    >
         <p>Unfortunatelly your browser is not compatible with iframes</p>
     </iframe>
 
