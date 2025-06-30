@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>My main site</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit qui
+        enim, eaque cupiditate amet itaque maxime quasi voluptatem quibusdam vero porro
+        veritatis quas, temporibus nulla, aut earum? Recusandae, minima doloribus.
+    </p>
+    <!--
+        To add rules about what runtime/actions are allowed inside
+        the iframe, it is possible use the atributes: 'sandbox' and 'referrerpolicy'.
+        * sandbox - can set restrictions:
+            'sandbox' -> all restrictions enabled;
+            'allow-forms' -> only form actions enabled;
+            'allow-same-origin' -> only same origin resources allowed;
+            ...
+
+        * referrerpolicy - Indicate which referer to send inside iframe:
+            'no-referer' -> header will not be sent;
+            'no-referrer-when-downgrade' -> header will not be sent without tls(https);
+            ...
+    -->
+    <iframe src="extraPages/page04.html"
+        sandbox="allow-same-origin allow-forms allow-scripts"
+        referrerpolicy="no-referer"
+    >
+        <p>Your browser is not compatible with iframes</p>
+    </iframe>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit qui
+        enim, eaque cupiditate amet itaque maxime quasi voluptatem quibusdam vero porro
+        veritatis quas, temporibus nulla, aut earum? Recusandae, minima doloribus.
+    </p>
+</body>
+</html>
