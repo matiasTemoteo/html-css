@@ -37,3 +37,11 @@ main {
     border-radius: 56px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.426);
 }
+
+#screen {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 264px;
+    height: 468px;
+}
