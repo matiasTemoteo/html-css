@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de Forms</title>
+</head>
+<body>
+    <h1>Forms Examples</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <!--
+            There is possible, to create a select field with available
+            options for user, using the tag 'select'. To add options to
+            be selected in the select tag, it is used the tag 'option' inside
+            the 'select' tag.
+            Each item encapsulated by 'option' tag will be displayed in the
+            select dropdown. This select list is not mutable by users, all
+            the options must be predefined.
+            * The tag 'optgroup' can be used to group options inside select
+            dropdown, when it can have a title to organize the options.
+        -->
+        <p>
+            <label for="istate">Estado</label>
+            <select name="state" id="istate">
+                <option value="" selected>*** Escolha ***</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="RN">Rio Grande Do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <!--
+            Other tag is the 'datalist', that is another way to have a dropdown
+            selection list. But in this case, beyond the options already predefined,
+            the user can also type he own option using the input.
+            * The tag 'optgroup' not works inside the datalist.
+        -->
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="ilstprof">
+            <datalist id="ilstprof">
+                <option value="ADM">Administrator</option>
+                <option value="ADM">Contabilista</option>
+                <option value="ADM">Desenvolvedor</option>
+                <option value="PRF">Professor</option>
+            </datalist>
+        </p>
+        <!--
+            The tag 'textarea' is used to create a writable text space, where
+            the user can type large texts. It is recomended to use method 'POST'
+            for form submit method when using textareas.
+        -->
+        <p>
+            <label for="imsg">Mensagem:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+                Sua Mensagem
+            </textarea>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
