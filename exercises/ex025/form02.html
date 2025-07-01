@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Forms Tests</h1>
+    <form action="cadastro.php" method="POST" autocomplete="on">
+        <p>
+            <label for="iuser">User:</label>
+            <!--
+                It is possible define some additional atributes for each html
+                form input like:
+                * size -> width size of the input box based on letter count
+                * required -> Set input as obligatory before submit
+                * minlength -> Minimun cout of digits required
+                * maxlength -> maximum count of digits accepted
+                * placeholder -> Hint text to help when filling the form
+                * autocomplete -> Type of data expected in the input (pwd, name, etc)
+            -->
+            <input
+                type="text" name="user" id="iuser" size="10"
+                required minlength="8" maxlength="12" 
+                placeholder="User Name" autocomplete="username"
+            >
+        </p>
+        <p>
+            <label for="ipwd">Password:</label>
+            <input
+                type="password" name="pwd" id="ipwd"
+                required minlength="5" placeholder="Password"
+                autocomplete="new-password"
+            >
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
