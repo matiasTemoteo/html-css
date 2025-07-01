@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Example</title>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form action="cadastro.php" method="GET" autocomplete="on">
+        <fieldset>
+            <legend>Sex</legend>
+            <!--
+                'Radio' is en input type used to allow user check options
+                between a list. By default the radio inputs have no relation
+                between them. So if you need to guarantee the the user can
+                check only one, it is necessary to use the same 'name' for all.
+                * In this case, the 'id' must be different, therefor, the label
+                will not work properly, and the data will not be correct match.
+            -->
+            <p>
+                <input type="radio" name="sex" id="isxmal">
+                <label for="isxmal">Male</label>
+
+                <input type="radio" name="sex" id="isxfem" checked>
+                <label for="isxfem">Female</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Favorite Sports</legend>
+            <!--
+                'Checkbox' is a input type used for allow multiple values
+                selection.
+                * Only the checked checkbox are sent by form when submitted
+            -->
+            <p>
+                <input type="checkbox"
+                    name="sport-football" id="i-sport-football" checked
+                > <label for="i-sport-football">Football</label>
+
+                <input type="checkbox"
+                    name="sport-basquetball" id="i-sport-basquetball"
+                > <label for="i-sport-basquetball">Basquetball</label>
+
+                <input type="checkbox"
+                    name="sport-baseball" id="i-sport-baseball" checked
+                > <label for="i-sport-baseball">Baseball</label>
+
+                <input type="checkbox"
+                    name="sport-Tenis" id="i-sport-Tenis"
+                ><label for="i-sport-Tenis">Tenis</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+</body>
+</html>
