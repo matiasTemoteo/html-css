@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Form Tests</h1>
+    <form action="cadastro.php" method="GET">
+        <!--
+            HTML Forms has some different types of inputs to handle number/date/time:
+            * number -> Only accepts number digits / allow user select via visual interface;
+            * month -> Allow user select year/month via visual interface;
+            * date -> allow user select whole date year/month/day via visual interface;
+            * time -> Allows user select time value '00:00' via visual interface;
+        -->
+        <p>
+            <label for="iname">Name:</label>
+            <input
+                type="text" name="name" id="iname" required maxlength="30"
+                placeholder="Username" autocomplete="username"
+            >
+        </p>
+        <p>
+            <label for="imedia">Media:</label>
+            <input
+                type="number" name="media" id="imedia" min="0" max="10"
+                placeholder="0 - 10" step="0.5" required value="5"
+            >
+        </p>
+        <p>
+            <label for="imonth">Month:</label>
+            <input
+                type="month" name="month" id="imonth" value="2025-07"
+                required
+            >
+        </p>
+        <p>
+            <label for="iproofday">Proof Day:</label>
+            <input
+                type="date" name="proofday" id="iproofday" value="2025-07-01"
+                required
+            >
+        </p>
+        <p>
+            <label for="iprooftime">Proof Time:</label>
+            <input
+                type="time" name="prooftime" id="iprooftime" value="19:15"
+                required
+            >
+        </p>
+        <p>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+        </p>
+    </form>
+</body>
+</html>
