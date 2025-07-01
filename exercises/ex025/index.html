@@ -20,7 +20,13 @@
 </head>
 <body>
     <h1>My first form</h1>
-    <form action="cadastro.php" autocomplete="off">
+    <!--
+        Form submit via GET is limited up to 3KB of data;
+        Method GET is not recomended when using sensitive data;
+        MEthod POST is more recomended when sending large content of data
+        and when sending sensitive data;
+    -->
+    <form action="cadastro.php" method="POST" autocomplete="off">
         <p>
             <label for="iname">Name:</label>
             <input type="text" name="name" id="iname">
