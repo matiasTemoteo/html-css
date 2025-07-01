@@ -20,10 +20,18 @@
 </head>
 <body>
     <h1>My first form</h1>
-    <form>
-        <p>Name: <input type="text" name="name" id="name"></p>
-        <p>Surname: <input type="text" name="surname" id="surname"></p>
-        <p><input type="submit" value="Submit"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p>
+            <label for="iname">Name:</label>
+            <input type="text" name="name" id="iname">
+        </p>
+        <p>
+            <label for="isurname">Surname:</label>
+            <input type="text" name="surname" id="isurname">
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
     </form>
 </body>
 </html>
