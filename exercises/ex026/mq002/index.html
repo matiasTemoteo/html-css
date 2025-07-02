@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <!--
+        It is possible to add more specific configuration for the 'media'
+        query definition, beyond add the 'media type' when the CSS file
+        will be used, there is possible to define the specific characteristics
+        to this 'media type', like orientation, in this case this additional
+        configuration is called 'media features'.
+        * Both 'media type' and 'media feature' are under the called
+        'media queries' configuration.
+    -->
     <link rel="stylesheet" href="styles/style.css" media="all">
+    <!--
+        Using media feature 'orientation' to choose between
+        landscape and portrait screen orientation.
+    -->
     <link rel="stylesheet" href="styles/stylelandscape.css"
         media="screen and (orientation: landscape)"
     >
