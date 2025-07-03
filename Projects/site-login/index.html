@@ -19,14 +19,14 @@
                 <h1>Login</h1>
                 <p>Welcome again! Login to continue!</p>
                 <form action="login.php" method="POST" autocomplete="on">
-                    <p>
+                    <p class="field">
                         <span class="material-symbols-outlined">account_circle</span>
                         <input type="email"
                             name="email" id="iemail" autocomplete="current-password"
                         >
                         <label for="iemail">email:</label>
                     </p>
-                    <p>
+                    <p class="field">
                         <span class="material-symbols-outlined">key</span>
                         <input type="password"
                             name="pwd" id="ipwd" autocomplete="email"
@@ -34,7 +34,7 @@
                         <label for="ipwd">Password:</label>
                     </p>
                     <input type="submit" value="Submit">
-                    <a href="formget.html">
+                    <a class="btn" href="formget.html">
                         Forgot Password <span class="material-symbols-outlined">forward_to_inbox</span>
                     </a>
                 </form>
