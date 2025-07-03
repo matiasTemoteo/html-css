@@ -55,4 +55,10 @@
         font-size: 1.2em;
         margin: 10px 0px;
     }
+
+    form > p.field > input {
+        height: 95%;
+        border: none;
+        transform: translateY(-7px);
+    }
 }
