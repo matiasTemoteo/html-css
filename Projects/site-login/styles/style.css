@@ -63,8 +63,7 @@ form > p.field {
     background-color: var(--color-2);
     width: 100%;
     height: 40px;
-    border: 2px solid var(--color-2);
-    border-radius: 12px;
+    border-radius: 16px;
     margin: 5px 0px;
 }
 
@@ -85,9 +84,9 @@ form > p.field > input {
     width: calc(100% - 40px);
     height: 100%;
     border: none;
-    border-radius: 10px;
+    border-radius: 16px;
     padding: 4px;
-    transform: translatey(-9px);
+    transform: translatey(-6px);
 }
 
 form > p.field > input:focus-within {
