@@ -21,15 +21,17 @@
                 <form action="login.php" method="POST" autocomplete="on">
                     <p class="field">
                         <span class="material-symbols-outlined">account_circle</span>
-                        <input type="email"
-                            name="email" id="iemail" autocomplete="current-password"
+                        <input type="email" required
+                            name="email" id="iemail" autocomplete="email"
+                            placeholder="Email" minlength="6" maxlength="50"
                         >
                         <label for="iemail">email:</label>
                     </p>
                     <p class="field">
                         <span class="material-symbols-outlined">key</span>
-                        <input type="password"
-                            name="pwd" id="ipwd" autocomplete="email"
+                        <input type="password" required
+                            name="pwd" id="ipwd" autocomplete="current-password"
+                            placeholder="Password" minlength="8" maxlength="20"
                         >
                         <label for="ipwd">Password:</label>
                     </p>
