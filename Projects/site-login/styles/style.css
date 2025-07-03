@@ -91,7 +91,7 @@ form > p.field > input {
 
 form > p.field > input:focus-within {
     background-color: white;
-    border: none;
+    outline: none;
 }
 
 form > input[type=submit] {
