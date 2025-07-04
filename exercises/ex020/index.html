@@ -5,7 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
     <title>Pseudo-Classes</title>
+    <!--
+        In CSS style files it is possible to declare what is called by 
+        'pseudo-class', it is a class that can be defined for every selector
+        in CSS, and indicates a behavior or event that can be related to the
+        element attached to the selector. To add the pseudo-class, just use
+        ':' after the selector. Examples:
+            - 'hover' - The class that will be activated when the mouse
+            get over the element.
+            - 'visited' - The class that will be activated when a link
+            is activated (after clicked).
+            ...
+    -->
     <style>
+        /*
+            The 'display' property defines how the element will be work inside
+            the HTML body, the values are:
+                - 'block' - The element is defined as a block, it will occup
+                    all the horizontal size of the parent and will always break
+                    rows between other contents above and bellow.
+                    * the default value for elements like
+                    'div', 'header', 'p', 'h1' ...
+
+                - 'inline' - the element is defined as a line element,
+                    it will occup horizontal size following its content and will
+                    be placed along with other elements in the same line with no
+                    brak rows.
+                    * The default value for elements like
+                    'a', 'strong', 'mark', 'iframe' ...
+
+                - 'inline-block' - The element is defined as a line element,
+                    but it will get some properties and behaviors from the block
+                    display.
+        */
         div {
             display: inline-block;
             background-color: lightgray;

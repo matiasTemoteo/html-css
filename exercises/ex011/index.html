@@ -11,6 +11,22 @@
     <p>
         Try open this site in different devices to view how the images fit the size
     </p>
+    <!--
+        The tag 'picture' has a semantic value in the HTML 5, where it is used to
+        indicating that is a image to be loaded there. Inside the 'picture' tag it is
+        necessary to have the tag 'img', because it is the tag that will in fact the image
+        will be loaded.
+        There is another tag that can be used along with img inside the 'picture' tag, that is
+        the tag 'source'. This tag indicates source options for the image load. The atribute
+        'srcset' defines the url/path of the image to be loaded.
+            * If it is a format not accepted by the browser, it will try the other source
+            options until find one that works. If no one works, the source indicated in
+            the own 'img' tag by the atribute 'src' will be used.
+            * For each soruce, it is possible also define a media query, specifying the
+            dimensions of the browser width where the soruce must be loaded, using the 
+            atribute 'media'.
+            * The atribute 'type' defines the type of the image being loaded, like 'image/png'.
+    -->
     <picture>
         <source media="(max-width: 750px)" srcset="images/foto-p.png" type="image/png">
         <source media="(max-width: 1000px)" srcset="images/foto-m.png" type="image/png">
@@ -20,6 +36,24 @@
     <p>
         Bellow it is configured a audio to be played here in the site
     </p>
+    <!--
+        The tag 'audio' is used to load audio content in the HTML body. When used it will
+        shows a audio control panel in the browser to control audio execution/pause, etc.
+        The audio also can be played as background sound, not allowing user interact with it.
+        It can has some atributes like:
+            - 'controls' - Enable the control panel in the browser for the audio.
+            - 'preload' - Indicates how/when the audio need to be loaded, with values:
+                * 'none' - Audio will be loaded only when played by user
+                * 'metadata' - Load only the basic data about audio, like name, duration.
+                * 'auto' - Load the entire audio together with the browser page loading.
+        As in the tag 'picture', in the 'audio' tag, it is possible to define sources for
+        the audio loading, where the browser will try one by one, until find the one that
+        works properly.
+            * In the source it is possible to define the atributes 'src' and 'type', and 
+            they work exactly as in the soruce of picture.
+            * If any one of the sources work properly, the other content added inside
+            the 'audio' tag, will be displayed.
+    -->
     <audio controls preload="metadata">
         <source src="media/tiburtina.mp3" type="audio/mpeg">
         <source src="media/retro-bg-music.wav" type="audio/wav">

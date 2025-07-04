@@ -11,6 +11,22 @@
     <p>This is possible to access abother page and sites content with links</p>
     <h2>External Links</h2>
     <h3>Example of links to external source:</h3>
+    <!--
+        It is possible define links inside the HTML body, using the 'a' tag. This tag has
+        some atributes to define the link whole functionallity:
+        * 'href' -> It is the link url (local or via internet) or '#' for no url
+        * 'hreflang' -> It is the language of the link text
+        * 'target' -> It is the target where the url destiny will be opened, like:
+            - '_blank' - For a new aba on browser
+            - 'self' - For open in the same document (if the link goes to external resource
+                it will replace the current page on browser)
+        * 'rel' -> Indicates the relation between current document and the link resource, like:
+            - 'external' - When the resource is a external document or website
+            - 'next' - When the resource is an other page of the same website
+        * 'download' -> Used to define the link as download link, instead of redirectional link.
+            In this case, it is possible to use the atribute 'type' to indicate the type of 
+            content that will be download by the link, like: 'application/pdf' or 'application/zip'
+    -->
     <p>
         This way is possible to access this
         <a href="https://gustavoguanabara.github.io" hreflang="pt-br">public github repo</a>

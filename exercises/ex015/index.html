@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
+    <!--
+        It is also possible create the CSS style in a dedicated file and
+        import it inside the HTML file, together with the other configuration
+        in the HTML head. To it, it is used the tag 'link'.
+    -->
     <link rel="stylesheet" href="style.css">
     <title>Estilos Externos</title>
+    <!--
+        It is possible add the style tag inside the head, and the style CSS
+        file via link, at the same time.
+    -->
     <style>
         h1 {
             text-decoration: underline;
@@ -56,6 +65,15 @@
         dicta voluptatem, itaque rerum, accusantium enim animi nisi reiciendis amet dignissimos magnam temporibus
         dolorem ab consequatur doloribus.
     </p>
+    <!--
+        It is possible add the CSS style directly in the tag with the 'style' atribute
+        at the same time of the style block in the head and the CSS style file via link.
+        All the CSS configurations will be loaded together, but depending on the method
+        of declaration, it will has different hierarchy priority:
+            1 - The style directly in the tag via 'style' stribute
+            2 - The style declared in the style tag in the head
+            3 - The style declared in the CSS external file added via link tag
+    -->
     <p style="text-align: right;">
         click <a href="page02.html" target="_self">here</a> to go to second page of the site
     </p>

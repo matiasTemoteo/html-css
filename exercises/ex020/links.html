@@ -48,6 +48,14 @@
             background-color: rgba(180, 50, 36, 40%);
         }
 
+        /*
+            In CSS styles there is also the pesudo-elements, these
+            are elements that is not delcared in the HTML, but can
+            be added in the CSS, using some declaration after selector.
+            To add pesudo-element, just add '::' after the selector.
+        */
+
+        /* before - creates a pesudo-element before the element in HTML */
         .special::before {
             content: "> ";
             text-decoration: none;
@@ -55,6 +63,7 @@
             color: rgba(0, 0, 0, 0.452);
         }
 
+        /* 'after' - creates pesudo-element after the element in HTML */
         .special::after {
             content: " <";
             text-decoration: none;

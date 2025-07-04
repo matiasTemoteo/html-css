@@ -6,6 +6,38 @@
     <link rel="shortcut icon" href="images/html-5.ico" type="image/x-icon">
     <title>Alinhamento Vertical</title>
     <style>
+        /*
+            In CSS Styles, there is a property named 'position', used to define
+            the position of the element in the html body. This position will
+            set the way this element will be showed and how it will interact
+            with the other elements in the page. The possible values are:
+                - 'static' - The default value of the position.
+
+                - 'relative' - This value sets that the element will be placed
+                    using the origin pivot axis as reference.
+
+                - 'fixed' - This value sets that the element is also relative
+                    to its pivot, but it will be fixed in the screen and not will
+                    be affected by scrolling and will not interact with other elements
+
+                - 'sticky' - Works almost as fixed. In this case, when its element is
+                    being showed in the middle of the screen, away from the borders it
+                    will work as a relative element, but when the page is scrolled and
+                    this element is in edge of the border, it will be fixed in the
+                    screen and will no be affected by the scrolling and also will not
+                    interact with the other elements.
+
+                - 'absolute' - This value define the element as absolute in the
+                    screen, so it will be placed using the viewport as base. But if its
+                    parent is an element with position 'relative', it will use this parent
+                    as base to be placed.
+
+                * all the 'relative-like' positions (relative, fixed, sticky, absolute)
+                    can use the referencial axis properties to be placed:
+                    'top', 'bottom', 'right' and 'left'.
+
+        */
+
         #container {
             position: relative;
             background-color: purple;

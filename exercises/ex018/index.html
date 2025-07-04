@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html-5.ico" type="image/x-icon">
     <title>Fonts Com Google Fonts</title>
+    <!--
+        It is possible import fonts inside CSS style, to this, it is used the
+        declaration '@import' followed by the url inside of the declaration 'url()'.
+
+        It is possible import fonts via local file, using the declaration '@font-face'
+        and indicating the name to be used to refer to the imported font using
+        the property 'font-family' inside the '@font-face' and the source, followed
+        by the format of the file (ttf or otf), using 'src()' + 'format()' properties
+    -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rancho&display=swap');
 
@@ -12,6 +21,7 @@
 
         @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rancho&display=swap');
 
+       /* Importing a font from local file */
         @font-face {
             font-family: 'greconian';
             src: url('fonts/Greconian.ttf') format('truetype');

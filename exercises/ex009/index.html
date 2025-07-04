@@ -9,6 +9,39 @@
 <body>
     <h1>Working with Lists</h1>
     <h2>Ordered Lists</h2>
+    <!--
+        There is possible represent lists in HTML using 'ol', 'ul' and 'dl' tags:
+        'ol' -> Defines a Ordenated list, used to represent lists that need to
+            be have an order bwtween their elements. In the beggining of each
+            item of the list, it will be showed an list indicator.
+            * Inside the list, to define each one of the items, it is uded the
+                tag 'li'.
+            * It is possible define the type of indicatior for the list, as:
+                - 'I' for Roman Numbers
+                - 'A' for Alphabetic ordenation
+                * If not defined, the default will be numeric: 1, 2, 3, ...
+
+        'ul' -> Defines an unordenated list, used to represent lists that have
+            not need to show an splicit order between the items. Used to represent lists
+            like: options of languages or available products in a shop. In the beggining
+            of each item of the list, it will be showed a indicator representing it is
+            one of the items of the list.
+            * Inside the list, to define each one of the items, it is uded the
+                tag 'li'.
+            * It is possible define the type of indicator for the list, as:
+                - 'square' for a square form
+                - 'circle' for a circle form
+                * If not defined, the default will be a dot.
+
+        'dl' -> Defines an associating list, where it can be defined name-value groups.
+            Used to defined lists like: Dictionaries or names and their means.
+            The name will be used as the indicator and the value will be the showed inside of it.
+            * Inside the list, to define each name-value, it is used the tags:
+                - 'dt' - data term, works as indicator
+                - 'dd' - data definition, works as the value/content for the indicator
+
+        * It is possible have nested lists, like 'ul' list inside a 'ol' or vice versa.
+    --> 
     <p>
         This is a Ordered List: <br>
         <ol>

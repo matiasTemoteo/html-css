@@ -10,12 +10,36 @@
     <h1>Insertinv videos</h1>
     <h2>Inserting locally hosted videos</h2>
     <p>This video is hosted locally in this own server</p>
+    <!--
+        The tag 'video' can be used to define a video content in the HTML body.
+        The video content will be displayed as a video player, when the controls
+        visibility is optional.
+        There are some atributes that can be defined, like:
+            - 'width' - The width of the video window
+            - 'height' - The height of the video window
+            - 'poster' - The placeholder image, to show before video is played (thumbnail)
+            - 'controls' - Enable the controls for the video player
+        As in the tag 'picture' and in the tag 'audio', it is possible to define sources for
+        the video loading, where the browser will try one by one, until find the one that
+        works properly.
+            * In the source it is possible to define the atributes 'src' and 'type', and 
+            they work exactly as in the soruce of audio.
+            * If any one of the sources work properly, the other content added inside
+            the 'audio' tag, will be displayed.
+    -->
     <video width="720" height="480" poster="images/forest-thumb.png" controls>
         <source src="media/forest-video.mp4" type="video/mp4">
         <source src="media/forest-video.mkv" type="video/mp4">
         <source src="media/forest-video.webm" type="video/mp4">
         <p>This web browser has no compatibilitty with video player</p>
     </video>
+
+    <!--
+        There is also possible to add embeded video in the HTML body.
+        Youtube and other video websites can put it available, the code
+        to show embeded video, where it will shows the real youtube display and
+        controls inside the page.
+    -->
     <h2>Inserting videos from external source</h2>
     <iframe width="560" height="315"
         src="https://www.youtube.com/embed/jPWsBuiy1rE?si=NZgD5S23H7MeNABa"

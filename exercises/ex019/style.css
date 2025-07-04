@@ -8,6 +8,11 @@ h1 {
     color: hsl(100, 91%, 9%)
 }
 
+/*
+    The class will be identified in the CSS style file by '.' and the
+    id will be identified by '#'.
+*/
+
 #main-h1 {
     text-align: center;
     background-color: #1e640c;
