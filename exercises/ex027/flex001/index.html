@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            In CSS styles, there is a display method called 'flex-box'.
+            It can organize automactically the itens inside a container
+            in a flexible mode, without need of many other configurations.
+            To use the flex-box model, just define the display as flex:
+             - display: flex;
+
+            To automatically set the itens inside the container to flow
+            into the container area, just:
+             - flex: auto;
+        */
+        div.container {
+            display: flex;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            flex: auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
