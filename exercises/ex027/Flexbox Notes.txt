@@ -1,0 +1,119 @@
+CSS Flexible Box Module Level 1
+
+Qual é o formato da água?
+
+  R: Vai depender do container (recipiente)
+
+
+O conteúdo do container vai definir o tamanho dele.
+
+
+Quem é o pai?
+
+  R: O Container
+
+Quem são os filhos?
+
+  R: Os items
+
+
+Direção:
+
+ - flex-direction
+
+ - Configuração no pai (container)
+
+ - Configurações:
+   - row (em linha - horizontal) - esquerda -> direita
+
+   - row-reverse (em linha - horizontal) - direita -> esquerda
+
+   - column (em linha - vertical) - cima -> baixo
+
+   - column-reverse (em linha - vertical) - baixo -> cima
+
+
+Eixos:
+
+ - main-axis (Eixo principal - segue a disposição dos elementos)
+ - cross-axis (Eixo transversal - cruza o eixo principal)
+ - Ambos os eixos possuem dois pontos de controle: start e end.
+
+ -  Quando em direção 'row':
+
+   - main-axis:
+
+	   'start' fica na extremidade superior/esquerda do container
+     'end' fica na extremidade superior/direita do container
+
+   - cross-axis:
+
+	   'start' fica na extremidade superior/esquerda do container
+ 	   'end' fica na extremidade inferior/esquerda do container
+
+
+ - Quando em direção 'row-reverse':
+
+   - main-axis:
+
+	   'start' fica na extremidade superior/direita do container
+     'end' fica na extremidade superior/esquerda do container
+  
+   - cross-axis:
+
+	   'start' fica na extremidade superior/direita do container
+ 	   'end' fica na extremidade inferior/direita do container
+
+
+  - Quando em direção 'column':
+
+    - main-axis:
+
+	   'start' fica na extremidade superior/esquerda do container
+	   'end' fica na extremidade inferior/esquerda do container
+
+    - cross-axis:
+
+	   'start' fica na extremidade superior/esquerda do container
+	   'end' fica na extremidade superior/direita do container
+
+- Quando em direção 'column-reverse':
+
+    - main-axis:
+
+	   'start' fica na extremidade inferior/esquerda do container
+	   'end' fica na extremidade superior/esquerda do container
+
+    - cross-axis:
+
+	   'start' fica na extremidade indefiro/esquerda do container
+	   'end' fica na extremidade inferior/direita do container
+
+
+Empacotamento:
+
+ - flex-wrap
+
+ - Configurações no pai (container)
+
+ - configurações:
+
+   - nowrap: Não encapsula - Ao reduzir área do container além da
+     área ocupada pelos items, os items irão encolher
+     proporcionalmente ao container (a mínimo width que o item pode
+     assumir será o tamanho da maior palavra existente).
+    
+
+   - wrap: Encapsula os elementos, quebrando eles para outra linha,
+     quando a área do container é reduzida além da área dos items.
+     Nesse caso os items não encolhem, mas sim são deslocados
+     seguindo o eixo transversal (quando 'row' -> cima ou baixo) e
+     (quando 'column' - direita ou esquerda), dependendo se é normal
+     ou reverse.
+
+   - wrap-reverse: Funciona exatamento como o wrap, porém, nesse
+     caso, os elementos são deslocados no sentido oposto ao eixo
+     transversal.
+ 
+
+
