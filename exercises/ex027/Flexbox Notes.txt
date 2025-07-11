@@ -152,3 +152,28 @@ Alinhamento no main-axis:
      espaço do item imediatamento ao lado do mesmo. Fazendo com que o espaço entre
      o primeiro e último items seja menor do que o existente entre os demais items
      centrais.
+
+
+Alinhamento no cross-axis:
+
+ - align-items
+
+ - configuração no pai (container)
+
+ - Baseando-se apenas no cross-axis (relativo a configuração do direction)
+
+ - configurações:
+
+   - stretch: Os items irão esticar seguindo o container no cross-axis.
+
+   - flex-start: Posiciona os items seguindo o ponto start do cross-axis.
+
+   - flex-end: Posiciona os items seguindo o ponto end do cross-axis.
+
+   - center: Posiciona os items no centro do container, seguindo o centro do
+     cross-axis, definindo espaços simétricos entre os items os pontos start e 
+     end do cross-axis.
+
+  * Ao usar a configuração align-items em conjunto com justify-content, é possível
+    alinhar os items dentro do container na horizontal e na vertical ao mesmo tempo
+    ao setar o valor de ambos para 'center'.
