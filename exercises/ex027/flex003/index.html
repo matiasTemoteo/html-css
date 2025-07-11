@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+           In flex-box, there is a property called 'flex-wrap' used to
+           define the way the container will capsule the items, and how the
+           items will flow, when the container be resized.
+           There are some possible values:
+            - 'nowrap' - The items will be resized following the container
+              resize, until it reachs the length of the largest word inside.
+            - 'wrap' - The items will not be resized, they will be moved inside
+              the container, following the cross-axis direction.
+            - 'wrap-reverse' - The items will follow the same behaviour of
+               wrap, but following the opposite of the cross-axis direction.
+
+            * There is a useful property called 'flex-flow', that is a
+              short-hand for the flex configuration (direction and wrap).
+        */
+        div.container {
+            display: flex;
+
+            /* full property */
+            /* flex-direction: row;
+            flex-wrap: nowrap; */
+
+            /* short hand */
+            flex-flow: row wrap-reverse;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Example of Block A</div>
+        <div class="item">Example of Block B</div>
+        <div class="item">Example of Block C</div>
+        <div class="item">Example of Block D</div>
+        <div class="item">Example of Block E</div>
+        <div class="item">Example of Block F</div>
+        <div class="item">Example of Block G</div>
+    </div>
+</body>
+</html>
