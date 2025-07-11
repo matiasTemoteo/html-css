@@ -117,3 +117,38 @@ Empacotamento:
  
 
 
+Alinhamento no main-axis:
+
+ - justify-content
+
+ - Configuração no pai (container)
+
+ - Baseando-se apenas no main-axis (relativo a configuração de direction)
+
+ - configurações:
+
+   - flex-start: Posiciona o primeiro elemento junto ao ponto start do main-axis e
+     os demais elementos em seguida, sem espaçamento adicional entre eles.
+
+   - flex-end: Posiciona o último elemento junto ao ponto end do main-axis e
+     os demais elementos em seguida, sem espaçamento adicional entre eles.
+
+   - center: Posiciona todos os elementos o máximo possível ao centro do container
+     calculando spaços iguais em torno do conjunto de elementos (antes e depois 
+     dos elementos).
+
+   - space-between: Posiciona o primeiro item junto ao ponto start do main-axis e
+     o último item junto ao ponto end do main-axis. Então adiciona espaços simétricos
+     entre os items que ficam no centro.
+
+   - space-evenly: Adiciona espaçamentos iguais entre todos os items do container,
+     mesmo entre o primeiro e o ponto start do main-axis e o último e o ponto end
+     do main-axis.
+
+   - space-around: Cria um espaço simétrico para cada item dentro do container e
+     posiciona o respectivo item ao centro deste espaço. Onde nesse caso, o
+     primeiro e último items tem apenas o restante do espaço entre ele o limite
+     do container. Enquanto os items centrais possuem o espaço deles mais o
+     espaço do item imediatamento ao lado do mesmo. Fazendo com que o espaço entre
+     o primeiro e último items seja menor do que o existente entre os demais items
+     centrais.

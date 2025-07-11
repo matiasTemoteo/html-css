@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            There is a configuration in flex-box, used to define the alignment
+            of the items inside the container. That is the property 'justify-content'.
+            The justify-content define the alignment besed on the main-axis.
+            This property has some possible configurations:
+
+             - 'start': Align the first item at the main-axis start point, and
+               mantain the other items following the same alignment.
+             - 'end': align the last element at the main-axis end point, and
+               mantain the other items following the same alignment.
+             - 'center': Align all the items at the center of the container.
+
+             - 'space-between': Align the first item at the start and the last one
+               at the end. And add simetric spaces between the other items.
+             - 'space-evenly': Add simetric spaces between all the elements.
+             - 'space-around': Define a area for each item inside the container
+               and align the respetive items at the center of that area.
+
+            There is another configuration in flex-box to define the alignment of
+            the items based on the cross-axis. That is the property 'align-items'.
+            This property has some possible configuration:
+
+             - 'stretch': The items will stretch in cross-axis following the
+               size of the container.
+             - 'flex-start': The items will be aligned at the start of the cross-axis.
+             - 'flex-end': The items will be aligned at the end of the cross-axis.
+             - 'center': The items will be aligned at the center of the cross-axis
+              and also the center of the container in this axis.
+        */
+        div.container {
+            height: 100px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
