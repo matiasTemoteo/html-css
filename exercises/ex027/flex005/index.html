@@ -7,6 +7,23 @@
     <title>Absolute Center Alignment</title>
     <style>
         /*
+            There is a property in flex-box that is called 'align-items'. This
+            property is used to define the alignment of the items inside the
+            container based on the cross-axis. There are some possible values:
+
+            - 'stretch' - The items stretch following the container size in
+              cross-axis.
+
+            - 'flex-start' - Align the first item at the start point of the
+              cross-axis and maintain the other items following the same alignment.
+
+            - 'flex-end' - Align the last item at the end point of the cross-axis
+              and maintain the other items following the same alignment.
+
+            - 'center' - Align all the items at the center of the container
+              in the cross-axis, it will be calulated a simetric space between
+              the items and the container edges.
+
             It is possible to align the item at the center of the container in 
             vertical and horizontal using the justify-content and align-items.
             Just defining 'center' as value to the both.
