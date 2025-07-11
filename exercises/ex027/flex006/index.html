@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            There is another property used to align items inside the container, that
+            is the 'align-content', but in this case, this property is used
+            to align the items when they are wrapped. These are the possible
+            values:
+
+             - 'stretch' - After the wrap, it will be calculated an area
+               for each line of items wrapped, and the items will be 
+               stretched to the line size following the cross-axis.
+
+             - 'flex-start' - After the wrap, the first line of items
+               will be aligned at the start point of the cross-axis and
+               the other items in the other lines will follow this
+               alignment atfer the first line.
+
+             - 'flex-end' - After the wrap, the last line of items
+               will be aligned at the end point of the cross-axis and the
+               other items in the other lines will follow this alignment after
+               the last line.
+
+             - 'center' - After the wrap, the items will all be aligned
+               at the center of the container following the center of the
+               cross-axis, adding spaces between the items and the edges
+               simetricly.
+
+             - 'space-between' - After the wrap, the first line of items
+               will be aligned at the start point of the cross-axis and
+               the last line of items will be aligned at the aligned
+               at the end point of the cross-axis. All the other centered
+               items will be aligned at center having simetric spaces
+               between them.
+
+             - 'space-evenly' - After the wrap, that will be calculated
+               a simetric space bwtween all the lines of items, even the
+               first and the last lines will have spaces bwtween them and
+               the edge of the container.
+
+             - 'space-around' - After the wrap, that will be calculated
+               a space for each line of items, where all the items inside
+               the line will be aligned at the center, having space around
+               them. The first and last lines will have only the own space
+               calculated between them and the container edge, while the
+               other centered lines will have their calculated spaces and
+               the other ones after and before them in the cross-axis flow.
+        */
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            /* align-items: flex-start; */
+            align-content: space-around;
+            background-color: lightsalmon;
+            height: 450px;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+    </div>
+</body>
+</html>

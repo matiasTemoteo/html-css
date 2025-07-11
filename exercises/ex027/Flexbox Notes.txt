@@ -98,13 +98,13 @@ Empacotamento:
 
  - configurações:
 
-   - nowrap: Não encapsula - Ao reduzir área do container além da
+   - nowrap: Não empacota - Ao reduzir área do container além da
      área ocupada pelos items, os items irão encolher
      proporcionalmente ao container (a mínimo width que o item pode
      assumir será o tamanho da maior palavra existente).
     
 
-   - wrap: Encapsula os elementos, quebrando eles para outra linha,
+   - wrap: empacota os elementos, quebrando eles para outra linha,
      quando a área do container é reduzida além da área dos items.
      Nesse caso os items não encolhem, mas sim são deslocados
      seguindo o eixo transversal (quando 'row' -> cima ou baixo) e
@@ -177,3 +177,47 @@ Alinhamento no cross-axis:
   * Ao usar a configuração align-items em conjunto com justify-content, é possível
     alinhar os items dentro do container na horizontal e na vertical ao mesmo tempo
     ao setar o valor de ambos para 'center'.
+
+
+Alinhamento dos elementos no empacotamento (wrap):
+
+ - align-content
+
+ - configuração no pai (container)
+
+ - Baseando-se apenas no cross-axis (relativo a configuração do direction)
+
+ - configurações:
+
+   - stretch: Depois da quebra dos items, vai ser calculado uma área para cada
+   linha/coluna gerada pelo wrap de maneira simétrica e os items dentro de cada
+   linha, serão esticados seguindo o cross-axis ficando com tamanho total do
+   espaço de cada área gerada.
+
+   - flex-start: Depois da quebra dos items, os items dentro do container serão
+   posicionados seguindo o ponto start do cross-axis, sem alteração na ordem
+   dos items.
+
+   - flex-end: Depois da quebra dos items, os items dentro do container serão
+   posicionados seguindo o ponto end do cross-axis, sem alteração na ordem dos
+   items.
+
+   - center: Depois da quebra dos items, os items dentro do container serão
+   posicionados ao centro do cross-axis, sendo calculado expaços simétricos
+   entre os items e os pontos start e end.
+
+   - space-between: Depois da quebra dos items, os items na primeira linha
+   serão posicionados junto ao ponto start do cross-axis e os items na
+   última linha serão posicionados junto ao ponto end do cross-axis. Todos
+   os outros items que estiverm nas linha ntermediárias, serão centralizados e
+   será calculado um espaço simétrico entre eles.
+
+   - space-evenly: Depois da quebra dos items, será calculado um espaço simétrico
+   entre todos os items e também entre os items na primeira linha item e o ponto
+   start e o os items na última linha e e o ponto end, seuindo o cross-axis.
+  
+   - space-around: Depois da quebra dos items, será definido um espaço simétrico
+   para cada linha e os items serão centralizados em suas respectivas linhas, de
+   forma que os items na primeira e última linhas terão o espaço apenas da
+   propria área entre eles e a extermidade do container e os items no centro, terão
+   entre si, is espaços da propria área e da área imediatamente antes e após.
