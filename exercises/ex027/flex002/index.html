@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            There is a configuration in flex-box that define the
+            direction of the content inside the container. That is
+            'flex-direction'. It has 4 different direction possible:
+              - 'row' - The elements will be placed in horizontal (left -> right)
+              - 'row-reverse' - Also horizontal but inverse (right -> left)
+              - 'column' - The elements will be placed in vertical (top -> bottom)
+              - 'column-reverse' - Also vertical but inverse (bottom -> top)
+
+            * Each direction has two axis created in the container and used
+            to position and alignement of the elements. Each one
+            has two points that define the position axis: 'start' and 'end'.
+            These are:
+              - 'main-axis' - Start point is the origin of the elements and
+                end point is where ends the flow of the elements.
+              - 'cross-axis' - When it is direction row, the start point is in
+                the top of the container and the end point is in the bottom.
+                When it is direction column, the start point is in the left
+                side of the container and the end point is in the right.
+
+        */
+        div.container {
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            /* flex: auto; */
+            text-align: center;
+            border: 1px solid black;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
