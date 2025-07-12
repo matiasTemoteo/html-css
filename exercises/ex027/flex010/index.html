@@ -7,15 +7,16 @@
     <title>Flex-Box</title>
     <style>
         /*
-            In CSS styles, there is a display method called 'flex-box'.
-            It can organize automactically the itens inside a container
-            in a flexible mode, without need of many other configurations.
-            To use the flex-box model, just define the display as flex:
-             - display: flex;
-
-            To automatically set the itens inside the container to flow
-            into the container area, just:
-             - flex: auto;
+            In flex-box, there is two properties, called: 'flex-grow' and 'flex-shrink',
+            these properties are related to the items growing and shrinking inside the
+            container. The possible values are:
+             - '0' - (default for grow) - For both it will define the resizing will
+               not be applied and the items will not follow the container resizing.
+             - '1' - (default for shrink) - For both it will define the resizing
+               will be applied, and the items will follow the container resizing.
+             - '> 1' - This value will define that the item will have its resizing
+               tax applied x times more than the minor no 0 value applied for another
+               item in the container.
         */
         div.container {
             display: flex;

@@ -7,14 +7,12 @@
     <title>Flex-Box</title>
     <style>
         /*
-            In flex-box, there is two properties, called: 'flex-grow' and 'flex-shrink',
-            these properties are related to the items growing and shrinking inside the
-            container. The possible values are:
-             - '0' - (default for grow) - For both it will define the resizing will
-               not be applied and the items will not follow the container resizing.
-             - '1' - (default for shrink) - For both it will define the resizing
-               will be applied, and the items will follow the container resizing.
-             - '> 1' - This value will define that the item will have its resizing
+            There is possible add different configurations for 'flex-basis',
+            'flex-grow' and 'flex-shrink' for each item inside a flex container.
+
+            For other values for 'flex-grow' and 'flex-shrink':
+
+            - '> 1' - This value will define that the item will have its resizing
                tax applied x times more than the minor no 0 value applied for another
                item in the container. Examples:
                 - item 'a' with grow '1' and item b with grow '2':
@@ -26,7 +24,6 @@
                   - The item 'b' will shrink in a tax 2 time bigger than item 'a'
                 - item 'a' with shrink '2' and item b with shrink '4':
                   - The item 'b' will shrink in a tax 2 time bigger than item 'a'
-                
         */
         div.container {
             display: flex;
