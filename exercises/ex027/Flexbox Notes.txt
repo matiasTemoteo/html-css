@@ -116,6 +116,20 @@ Empacotamento:
      transversal.
  
 
+Configuração conjunta do flex-direction e flex-wrap:
+
+ - flex-flow
+
+ - Configuração no pai (container)
+
+ - short-hand
+
+ - flex-flow: 'flex-direction' 'flex-wrap'
+
+ - Exemplo:
+     flex-flow: row wrap;
+     flex-flow: column nowrap;
+
 
 Alinhamento no main-axis:
 
@@ -223,7 +237,7 @@ Alinhamento dos elementos no empacotamento (wrap):
    entre si, is espaços da propria área e da área imediatamente antes e após.
 
 
-Ordenamento de items
+Ordenação de items
 
    - order
 
@@ -296,6 +310,8 @@ Configuração de crescimento e encolhimento dos items
 
   - configuração nos filhos (items)
 
+  - Baseando-se apenas no main-axis (relativo a configuração do direction)
+
   - configurações:
 
     - auto: No caso do flex-grow, o padrão é o valor 0, o que diz que os items
@@ -311,3 +327,42 @@ Configuração de crescimento e encolhimento dos items
        - Dois items, um com grow 1 e outro com grow 2, o segundo vai crescer
          o dobro em relçao ao primeiro, não por ser 2, mas por ser o dobro do
          menor valor diferente de 0.
+
+
+Configuração conjunta de flex-basis, flex-grow e flex-shrink:
+
+ - flex
+
+ - confioguração nos filhos (items)
+
+ - Baseando-se apenas no main-axis (relativo a configuração do direction)
+
+ - short-hand
+
+ - flex: 'flex-grow' 'flex-shrink' 'flex-basis'
+
+ - Exemplos:
+     flex: 1 0 100px;
+     flex: 0 1 50px;
+
+ - Outras configurações:
+
+   - initial: Equivalente a utilizar 'flex: 0 1 auto', onde o item será flexível
+     no encolhimento (flex-shrink = 1), mas fixo no crescimento (flex-grow = 0),
+     enquanto o tamanho do item é automático (flex-basis = auto). Esse é o valor
+     padrão para cada uma das três configurações inlcusas no propriedade flex.
+
+   - none: Equivalente a utilizar 'flex: 0 0 auto', onde o item não será flexível
+     nem em encolhimento (flex-shrink) nem em srescimento (flex-grow), mantendo o
+     tamanho automático (flex-basis = auto). Essa configuração acaba sendo mais
+     rígida e menos flexível.
+
+   - auto: Equivalente a utilizar 'flex: 1 1 auto', onde o item será flexível tanto
+     em encolhimento (flex-shrink) quanto em crscimento (flex-grow) e manterá o 
+     tamanho como automático (flex-basis = auto). Essa é a configuração mais
+     flexível possível em flexbox.
+
+   - valor númerico: Quando se usa um único valor numérico na configuração flex,
+     esta sendo configurado apenas o 'flex-grow', enquanto o 'flex-shrink' e 
+     o 'flex-basis' se mantém com o valor padrão, que são: 'flex-shrink = 1' e
+     'flex-basis = auto'.
