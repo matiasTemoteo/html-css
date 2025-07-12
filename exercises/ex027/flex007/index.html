@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            In flex-box, there is a property called 'order', used to define the
+            order of how every item will be displayed in the container, following
+            the main-axis direction. The values can be:
+             - '0' - (Default) If all the items was defined with this order
+               value, or just no defined, so using the default, the order will
+               depend of the order on the HTML.
+
+             - Any integer number (negative or positive) - The item will be
+               displayed following this order between all the other items.
+               The item with the minor order, will come first and so on.
+        */
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        div#i1 {
+            order: 0;
+        }
+
+        div#i2 {
+            order: -2;
+        }
+
+        div#i3 {
+            order: 6;
+        }
+
+        div#i4 {
+            order: 1;
+        }
+
+        div#i5 {
+            order: -9;
+        }
+
+        div#i6 {
+            order: 11;
+        }
+
+        div#i7 {
+            order: 7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

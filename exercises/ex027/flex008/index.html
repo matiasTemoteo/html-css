@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            In flex-box, there is a property used to aling every item individually,
+            that is the 'align-self', used only in the items inside a flex
+            container. This property will aling the item following the cross-axis.
+            The possible values are:
+             - 'auto' - (default) - The item will follow the alignment defined
+               for the container with 'align-items'.
+             - 'inherit' - The same as 'auto', will follow the alignment defined
+               for the container with 'align-items'.
+             - 'flex-start' - Will align the item at the start point of the
+               cross-axis.
+             - 'flex-end' - Will align the item at the end point of the cross-axis.
+             - 'center' - Will align the item at the center of the container,
+               following the center of cross-axis, where it will be calculated
+               the spaces between the item and the respetive start and end points
+               simetricly.
+             - 'stretch' - Will stretch the item to occupie all the size of the
+               container in the cross-axis direction. (Is the default value
+               for the property 'align-items' defined in the container).
+        */
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            background-color: lightsalmon;
+            height: 250px;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        div#i1 {
+            align-self: auto;
+        }
+
+        div#i2 {
+            align-self: center;
+        }
+
+        div#i3 {
+            align-self: flex-end;
+        }
+
+        div#i4 {
+            align-self: stretch;
+        }
+
+        div#i5 {
+            align-self: inherit;
+        }
+
+        div#i6 {
+            align-self: stretch;
+        }
+
+        div#i7 {
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">A</div>
+        <div class="item" id="i2">B</div>
+        <div class="item" id="i3">C</div>
+        <div class="item" id="i4">D</div>
+        <div class="item" id="i5">E</div>
+        <div class="item" id="i6">F</div>
+        <div class="item" id="i7">G</div>
+    </div>
+</body>
+</html>

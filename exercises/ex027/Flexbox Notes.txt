@@ -221,3 +221,44 @@ Alinhamento dos elementos no empacotamento (wrap):
    forma que os items na primeira e última linhas terão o espaço apenas da
    propria área entre eles e a extermidade do container e os items no centro, terão
    entre si, is espaços da propria área e da área imediatamente antes e após.
+
+
+Ordenamento de items
+
+   - order
+
+   - configuração nos filhos (items)
+
+   - configurações:
+
+     - 0 - (padrão) Todos os elementos tem o mesmo order e vão aparecer
+     na tela na ordem natural do HTML, seguindo o main-axis como padrão.
+
+     - Qualquer número inteiro, negativo ou positivo (-5, 0, 1, 3, ...)
+     Os item serão ordenados dentro do container seguindo a ordem dos
+     números, quanto menor o número, primeiro o item será ordenado.
+     A ordenação segue o main-axis da mesma forma que seria com order 0.
+
+
+Alinhamento individual
+
+   - align-self
+
+   - configuração nos filhos (items)
+
+   - Baseando-se apenas no cross-axis (relativo a configuração do direction)
+
+   -configurações:
+
+     - auto: Herda o alinhamento definido no container (align-items)
+
+     - flex-start: Alinha o item junto ao ponto start do cross-axis
+
+     - flex-end: Alinha o item junto ao ponto end do cross-axis
+
+     - center: Alinha o item ao centro do container, seguindo o centro
+     do cross-axis, sendo calculado um espaçamento simétrico entre o item
+     os pontos start e end.
+
+     - stretch: Extica o item, seguindo o tamanho total do container, seguindo
+     o cross-axis.
