@@ -43,51 +43,51 @@ Eixos:
 
    - main-axis:
 
-	   'start' fica na extremidade superior/esquerda do container
-     'end' fica na extremidade superior/direita do container
+	   'start' fica na extremidade esquerda do container
+     'end' fica na extremidade direita do container
 
    - cross-axis:
 
-	   'start' fica na extremidade superior/esquerda do container
- 	   'end' fica na extremidade inferior/esquerda do container
+	   'start' fica na extremidade superior do container
+ 	   'end' fica na extremidade inferior do container
 
 
  - Quando em direção 'row-reverse':
 
    - main-axis:
 
-	   'start' fica na extremidade superior/direita do container
-     'end' fica na extremidade superior/esquerda do container
+	   'start' fica na extremidade direita do container
+     'end' fica na extremidade esquerda do container
   
    - cross-axis:
 
-	   'start' fica na extremidade superior/direita do container
- 	   'end' fica na extremidade inferior/direita do container
+	   'start' fica na extremidade superior do container
+ 	   'end' fica na extremidade inferior do container
 
 
   - Quando em direção 'column':
 
     - main-axis:
 
-	   'start' fica na extremidade superior/esquerda do container
-	   'end' fica na extremidade inferior/esquerda do container
+	   'start' fica na extremidade superior do container
+	   'end' fica na extremidade inferior do container
 
     - cross-axis:
 
-	   'start' fica na extremidade superior/esquerda do container
-	   'end' fica na extremidade superior/direita do container
+	   'start' fica na extremidade esquerda do container
+	   'end' fica na extremidade direita do container
 
 - Quando em direção 'column-reverse':
 
     - main-axis:
 
-	   'start' fica na extremidade inferior/esquerda do container
-	   'end' fica na extremidade superior/esquerda do container
+	   'start' fica na extremidade inferior do container
+	   'end' fica na extremidade superior do container
 
     - cross-axis:
 
-	   'start' fica na extremidade indefiro/esquerda do container
-	   'end' fica na extremidade inferior/direita do container
+	   'start' fica na extremidade esquerda do container
+	   'end' fica na extremidade direita do container
 
 
 Empacotamento:
