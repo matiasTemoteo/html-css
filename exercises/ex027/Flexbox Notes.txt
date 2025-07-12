@@ -288,3 +288,26 @@ Tamanho dos items
     - Tamanho em %: Funciona quase igual ao tamanho em px, porém como é em
       porcentagem, o item será redimencionado baseado no tamanho do container,
       tendo como tamanho mínimo o conteúdo interno.
+
+
+Configuração de crescimento e encolhimento dos items
+
+  - flex-grow / flex-shrink
+
+  - configuração nos filhos (items)
+
+  - configurações:
+
+    - auto: No caso do flex-grow, o padrão é o valor 0, o que diz que os items
+      não vão crescer junto com o container. No caso do flex-shrink, o padrão
+      é 1, o que dis que os items irão encolher junto com o container.
+
+    - valor 1: No caso do flex-grow, o item irá crescer junto com o container.
+      No caso do flex-shrink, o item irá encolher junto com o container.
+
+    - Valor maior que 1: O item irá crescer (grow) or encolher (shrink)
+      proporcionalmente mais em relação ao item com menor valor para a
+      propriedade. Example:
+       - Dois items, um com grow 1 e outro com grow 2, o segundo vai crescer
+         o dobro em relçao ao primeiro, não por ser 2, mas por ser o dobro do
+         menor valor diferente de 0.

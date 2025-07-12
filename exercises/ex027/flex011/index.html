@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            In flex-box, there is two properties, called: 'flex-grow' and 'flex-shrink',
+            these properties are related to the items growing and shrinking inside the
+            container. The possible values are:
+             - '0' - (default for grow) - For both it will define the resizing will
+               not be applied and the items will not follow the container resizing.
+             - '1' - (default for shrink) - For both it will define the resizing
+               will be applied, and the items will follow the container resizing.
+             - '> 1' - This value will define that the item will have its resizing
+               tax applied x times more than the minor no 0 value applied for another
+               item in the container. Examples:
+                - item 'a' with grow '1' and item b with grow '2':
+                  - The item 'b' will grow in a tax 2 time bigger than item 'a'
+                - item 'a' with grow '2' and item b with grow '4':
+                  - The item 'b' will grow in a tax 2 time bigger than item 'a'
+
+                - item 'a' with shrink '1' and item b with shrink '2':
+                  - The item 'b' will shrink in a tax 2 time bigger than item 'a'
+                - item 'a' with shrink '2' and item b with shrink '4':
+                  - The item 'b' will shrink in a tax 2 time bigger than item 'a'
+                
+        */
+        div.container {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 300px;
+        }
+
+        div#ia {
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+
+        div#ib {
+            flex-shrink: 3;
+            flex-grow: 1;
+        }
+
+        div#ic {
+            flex-shrink: 6;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="ia" class="item">A</div>
+        <div id="ib" class="item">B</div>
+        <div id="ic" class="item">C</div>
+    </div>
+</body>
+</html>
