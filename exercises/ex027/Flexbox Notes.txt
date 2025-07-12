@@ -262,3 +262,29 @@ Alinhamento individual
 
      - stretch: Extica o item, seguindo o tamanho total do container, seguindo
      o cross-axis.
+
+
+Tamanho dos items
+
+  - flex-basis
+
+  - configuração nos filhos (items)
+
+  - Baseando-se apenas no main-axis (relativo a configuração do direction)
+
+  -configurações:
+
+    - auto: (padrão) O Tamanho acompanha o tamanho do conteúdo interno
+      do item no main-axis. Conforme  o conteúdo aumenta, o tamanho do item
+      aumenta também.
+
+    - Tamanho em px: Definie o tamanho máximo do item com exatos x valor em px no
+      main-axis, independente do tamanho do conteúdo do item. Porém o tamanho
+      do item é adaptável ao tamanho máximo do container e pode ser redimensionado
+      conforme o container tem seu tamanho reduxido, seguindo sempre o main-axis.
+      Quando os items chegam a um tamanho mínimo, devido ao conteúdo ou alguma
+      outa config além das propriedades flex, os item vazam do container.
+
+    - Tamanho em %: Funciona quase igual ao tamanho em px, porém como é em
+      porcentagem, o item será redimencionado baseado no tamanho do container,
+      tendo como tamanho mínimo o conteúdo interno.

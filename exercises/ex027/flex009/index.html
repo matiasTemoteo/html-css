@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Flex-Box</title>
+    <style>
+        /*
+            In flex-box, there is a property called 'flex-basis' that is used
+            to define a size for the items inside a container. The size
+            defined will be applied to the item and it will work as a max-size.
+            When the container be resized and the size is getting minor, when
+            there is no space for the items continue with the defined size, thei
+            will be resized following the container, by the minimum size allowed
+            by the inner content in the item. The values possible are:
+             - 'auto' - The size will be defined by the item's inner content.
+             - 'size in px' - The size will be defined in exactly pxs indicated,
+               when the minium size is the inner content and the maximum size is
+               the size allowed by the container if possible.
+             - 'size in %' - The size will follow a precentage rate based on the
+               container size, when the minimum size is the item's inner content.
+        */
+        div.container {
+            display: flex;
+            flex-flow: row wrap;
+            background-color: lightsalmon;
+        }
+
+        div.item {
+            background-color: lightblue;
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 125px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">Cotent</div>
+        <div class="item">D</div>
+        <div class="item">Small Cont</div>
+        <div class="item">Large Content</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
