@@ -49,6 +49,7 @@ article.text-media {
 
 article > div.text {
     flex: 1 1 500px;
+    margin: 25px 0;
 }
 
 article > div.media {
