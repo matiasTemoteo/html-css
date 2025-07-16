@@ -113,7 +113,8 @@ Empacotamento:
 
    - wrap-reverse: Funciona exatamento como o wrap, porém, nesse
      caso, os elementos são deslocados no sentido oposto ao eixo
-     transversal.
+     transversal normal, nesse caso o eixo se inverte e os pontos
+     start e end também são invertidos, assim como no row/column-reverse.
  
 
 Configuração conjunta do flex-direction e flex-wrap:
@@ -235,6 +236,17 @@ Alinhamento dos elementos no empacotamento (wrap):
    forma que os items na primeira e última linhas terão o espaço apenas da
    propria área entre eles e a extermidade do container e os items no centro, terão
    entre si, is espaços da propria área e da área imediatamente antes e após.
+
+
+Sobre alinhamento em wrap e nowrap:
+
+ - flex-wrap: wrap:
+    - align-content (prioridade)
+    - align-items (segunda opção)
+
+ - flex-wrap: nowrap:
+    - align-items (única opção)
+    - align-content (ignorado)
 
 
 Ordenação de items
