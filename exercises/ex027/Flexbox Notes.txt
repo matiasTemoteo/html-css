@@ -189,6 +189,10 @@ Alinhamento no cross-axis:
      cross-axis, definindo espaços simétricos entre os items os pontos start e 
      end do cross-axis.
 
+  * Esta configuração alinha os items tendo como base o area atual do item,
+    em caso de nowrap, sendo o container inteiro, mas no caso de wrap, sendo
+    apenas a linha quebrada onde item esta organizado.
+
   * Ao usar a configuração align-items em conjunto com justify-content, é possível
     alinhar os items dentro do container na horizontal e na vertical ao mesmo tempo
     ao setar o valor de ambos para 'center'.
@@ -236,6 +240,11 @@ Alinhamento dos elementos no empacotamento (wrap):
    forma que os items na primeira e última linhas terão o espaço apenas da
    propria área entre eles e a extermidade do container e os items no centro, terão
    entre si, is espaços da propria área e da área imediatamente antes e após.
+
+   * Esta configuração atende somente no caso de 'flex-wrap: wrap', onde o
+   alinhamento é feito tendo como base o container como um todo, independente de
+   qual linha esta, diferente do align-items, que tem em wrap, teria como base
+   somente a linha atual do item.
 
 
 Sobre alinhamento em wrap e nowrap:
