@@ -1,0 +1,35 @@
+Grid Layout Module 1
+
+Anatomia de um Grid:
+
+ - Container: Caixa que contém os ítems (elemento pai)
+
+ - Grid Items: Item formado pelo espaço das interceções das grades
+
+ - Grid Track: Linha/trilha que se extende por todos os Grid Items em uma direção
+   - Row Track - Grid Track na horizontal
+   - Column track - Grid Track na vertical
+ 
+ - Grid Lines: As linhas que definem as grades do container
+   - Grid Lines Veticais - Definem as Column Tracks
+   - Grid Lines Horizontais - Definem as Row Tracks
+
+   * São numeradas, nos sentidos seguintes:
+
+     - Padrão (1, 2, 3, ...n):
+        - A partir da primeira linha (1) em direção a útlima (n)
+        - Horizontal (row): esquerda > direita,
+        - Vertical (column): cima > baixo
+
+     - Inverso (-1, -2, -3, ...-n):
+        - A partir da última linha (-1) em direção a primeira (-n)
+        - Horizontal (row): direita > esquerda
+        - Vertical (column): baixo > cima
+
+ - Grid Area: Area formada por mais de um Grid Item conectados um ao outro,
+   orientado no grid usando os índices de numeração dos Grid Lines.
+
+ - Grid Gap: Espaço adicionado entre Grid Items, principalmente para fins de
+   design.
+
+
