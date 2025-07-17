@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Layout na Prática</title>
     <style>
+        /*
+            In CSS, there is a configuration called 'grid-layout', that can
+            be used to create layouts of grid, organized by columns and rows
+            and with responsive and flexible properties.
+
+            To define a container as grid, just add 'display: grid'.
+
+            Within the grid definition, there are some properties to create
+            the columns and rows and define the structure of the grid. Those
+            are: 
+
+             - 'grid-template-columns' - Define the count of columns of the
+                grid, where the column is generated in the horizontal flow, but
+                the lines those define the columns are verticals.
+                The count of columns is defined by the count of values added and
+                the individual values defines the respective columns sizes.
+
+                Example: 'grid-template-columns: 10px 20px 10px;'
+                  - In this case, there was defined 3 columns, with the respective
+                    sizes: 10px, 20px and 10px.
+
+             - 'grid-template-rows' - Define the count of the rows of the grid,
+                where the row is generated in the vertical flow, but the lines
+                those define the rows are horizontals. 
+                The count of rows is defined by the count of values added and
+                the individual values defines the respective rows sizes.
+
+                Example: 'grid-template-rows: 25px 20px 20px;'
+                  - In this case, there are defined 3 rows, with the respective
+                    sizes: 25px, 20px and 20px.
+
+             - 'gap' - Define the gap existente between the grid-items in the
+                grid container.
+        */
         div.container {
             display: grid;
             grid-template-columns: auto auto auto;
