@@ -84,3 +84,131 @@ Definindo o Gap entre os Grid-items:
      como um gap (ou um espaço) separando eles.
 
 
+Alinhamento dos items na vertical:
+
+ - align-items
+
+ - Propriedade do Container (pai)
+
+ - Alinha em relação ao spaço individual de cada grid-item
+
+ - Configurações:
+
+   - stretch (padrão): Estica os grid-items na vertical dentro da respectiva área do
+     grid-item, até que eles colem nas extremidades, ocupando todo o espaço no
+     sentido vertical.
+
+   - start: Posiciona os grid-items na posição start da respectiva área do grid-item
+     na vertical (cima).
+
+   - center: Posiciona os grid-items no centro da respetiva área do grid-item
+     tendo como base o sentido vertical.
+
+   - end: Posiciona os grid-items na posição end da respectiva área do grid-item
+     tendo como base o sentido vertical (baixo).
+
+
+Alinhamento dos items na horizontal:
+
+ - justify-items
+
+ - Propriedade do container (pai)
+
+ - Alinha em relação ao spaço individual de cada grid-item
+
+ - Configurações:
+
+   - stretch (padrão) - Estica os gri-items na horizontal dentro da respectiva área
+     do grid-item, até que eles colem nas extremidades, ocupando todo o espaço no
+     sentido horizontal.
+
+   - start: Posiciona os grid-items na posição start da respectiva área do grid-item
+     na horizontal (esquerda).
+
+   - center: Posiciona os grid-items no contro da respectiva área do grid-item tendo
+     como base o sentido horizontal.
+
+   - end: Posiciona os grid-items na posição end da respectiva área do grid-item
+     na horizontal (direita).
+
+
+Alinhamento do conteúdo na vertical:
+
+ - align-content
+
+ - Propriedade do container (pai)
+
+ - Alinha todos o items em conjunto em relação ao container
+
+ - Configurações:
+
+   - start (padrão) - Posiciona o conteúdo na posição start do container no
+     sentido vertical (cima).
+
+   - center: Posiciona o conteúdo no centro do container no sentido vertical.
+
+   - end: Posiciona o conteúdo na posição end do container no sentido vertical (baixo).
+
+   - space-between - Posiciona a primeira grid-row (e seus respectivos grid-items) na
+     posição start do container, colada na estremidade (cima), posiciona a última grid-row
+     (e seus respectivos grid-items) na posição end do container, colada na extremi-
+     dade (baixo). Enquanto as demais grid-rows são separadas entre si, por espacos simétricos.
+     O alinhamento segue a direção vertical.
+     Funciona de maneira semelhante à 'justify-content' no flex-box, com resalvas.
+
+   - space-evenly - Posiciona as grid-rows (e seus respectivos grid-items) de maneira
+     a existir um espaço simétrico entre todas elas (entre a primeira e a extremidade
+     superior, a última e a extremidade inferior e as demais entre si) seguindo o 
+     sentido vertical.
+
+   - space-around - Posiciona as grid-rows (e seus respectivos grid-items) de maneira
+     a existir um espaço em volta de todas elas, onde no caso da primeira e da
+     última grid-rows o espaço entre elas e a extremidade é somente o dela (único),
+     enquanto no caso das demais grid-rows, os espaços serão duplos, pois existirão
+     os espaços de cada grid-row somados aos espaços da grid-row imediatamente
+     abaixo ou acima dela.
+
+   - stretch - Estica as grid-rows (e seus respectivos grid-items) de maneira
+     a ocupar todo o espaço no sentido vertical do container, onde as grid-rows serão
+     dimensionadas simetricamente.
+
+
+- Alinhamento do conteúdo na horizontal:
+
+ - justify-content
+
+ - Propriedade do container (pai)
+
+ - Alinha todos o items em conjunto em relação ao container
+
+ - Configurações:
+
+   - start (padrão) - Posiciona o conteúdo na posição start do container no sentido
+     horizontal (esquerda)
+
+   - center - Posiciona o conteúdo no centro do container no sentido horizontal.
+
+   - end - Posiciona o conteúdo na posição end do container no sentido horizontal (direita).
+
+   - space-between - Posiciona a primeira grid-column (e seus respectivos grid-items)
+     na posição start do container, colada na extremidade (esquerda), posiciona a 
+     última grid-column (e seus respectivos grid-items) na posição end do container,
+     colada na extremidade (direita). Enquanto as demais grid-columns são separadas
+     entre si por espaços simétricos. O alinhamento segue a direção horizontal.
+     Funciona de maneira semelhante à 'justify-content no flex-box, com resalvas.
+
+   - space-evenly - Posiciona as grid-columns (e seus respectivos grid-items) de
+     maneira a existir um espaço simétrico entre todas elas (entre a primeira e a
+     extremidade esquerda, a última e a extremidade direita e as demais entre si)
+     seguindo o sentido horizontal.
+
+   - space-around - Posiciona as grid-columns (e seus respectivos grid-items) de
+     maneira a existir um espaço em volta de todas elas, onde no caso da primeira
+     e da última grid-columns, o espaço entre elas e as extremidades é somente
+     o dela (único), enquanto no caso das demais gri-columns, os espaços serão
+     duplos, pois existirão os epaços de cada grid-column somados aos espaços
+     da grid-column imediatamente à esquerda e à direita dela.
+
+   - stretch - Estica as grid-columns (e seus respectivos grid-items) de maneira a
+     ocupar todo os espaço no sentido horizontal do container, onde as grid-columns
+     serão dimensionadas simetricamente.
