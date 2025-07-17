@@ -2,7 +2,7 @@ Grid Layout Module 1
 
 Anatomia de um Grid:
 
- - Container: Caixa que contém os ítems (elemento pai)
+ - Grid Container: Caixa que contém os ítems (elemento pai)
 
  - Grid Items: Item formado pelo espaço das interceções das grades
 
@@ -31,5 +31,56 @@ Anatomia de um Grid:
 
  - Grid Gap: Espaço adicionado entre Grid Items, principalmente para fins de
    design.
+
+
+Propriedades do Container:
+
+ - display: Define o bloco atual como um container grid.
+
+ - grid-template-columns: Define quantas colunas exisitram no grid.
+
+ - grid-template-rows: Define quantas linha exisitiram no grid.
+
+ - grid-gap: Define o gap (espaço) entre os Grid-items.
+
+
+Definindo as Colunas do Grid (vertical):
+
+ - grid-template-columns
+
+ - Proproedade do Container (pai)
+
+ - Configurações:
+
+   - Valor individual por coluna em sequência: 100px 100px 50px 90px ...
+     O número de colunas será definido pela quantidade de valores informados.
+     O tamanho de cada coluna será definido pelo valor informado na respectiva
+     posição. Exemplo: Coluna 1 - 100px, coluna 3 - 50px.
+
+
+Definindo as Linhas do Grid (horizontal):
+
+ - grid-template-rows
+
+ - Propriedade do Container (pai)
+
+ - Configurações:
+
+   - Valor individual por linha em sequência: 30px 90px 30px 40px ...
+     O número de linhas será definido pela quantidade de valores informados.
+     O tamanho de cada linha será definido pelo valor informado na respectiva
+     posição. Exemplo: Linha 1 - 30px, linha 2 - 90px, linha 4 - 40px.
+
+
+Definindo o Gap entre os Grid-items:
+
+ - grid-gap (obsoleto) | gap (atual)
+
+ - Propriedade do Container (pai)
+
+ - Configurações:
+
+   - Valor em px: O valor informado em px será adicionado em torno dos grid-items
+     como um gap (ou um espaço) separando eles.
 
 
