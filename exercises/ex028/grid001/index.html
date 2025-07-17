@@ -38,11 +38,133 @@
 
              - 'gap' - Define the gap existente between the grid-items in the
                 grid container.
+
+             Beyond the configurations to define the grid-layout structure, there
+             are other configurations we can add in the container to configure the
+             alignment of the content in the grid. They are:
+
+              - 'align-items' - This property defines the alignment of the grid-items
+                based on each grid-item area in a individually way. This property
+                will set the alignment in the vertical. These are the possible values:
+
+                - 'stretch' - It will stretch the grid-item in the respective area
+                   in the whole size in vertical.
+
+                - 'start' - It will align the grid-item in the start point of the
+                   respective area (top).
+
+                - 'center' - It will align the grid-item in the center of the
+                   respective area.
+
+                - 'end' - It will align the grid-item in the end point of the
+                   respective area (bottom).
+
+                - 'normal' (default) - Key-value, automatically uses 'stretch' as
+                   config.
+
+              - 'justify-items' - This property defines the alignment of the grid-items
+                 based on each grid-item area in a individually way. This property
+                 will set the alignment in the horizontal. These are the possible values:
+
+                 - 'stretch' - It will stretch the grid-item in the respective area
+                    in the whole size in horizontal.
+
+                 - 'start' - It will align the grid-item in the start point of the
+                    respective area (left).
+
+                 - 'center' - It will align the grid-item in the center of the
+                    respecive area.
+
+                 - 'end' - It will align the grid-item in the end point of the
+                    respective area (right).
+
+                 - 'normal' (default) - Key value, automatically uses 'stretch' as
+                    config.
+
+              - 'align-content' - This property defines the alignment of the
+                 content inside the container based on the container area, not
+                 focusing in individual grid-items, but in the all content
+                 at same time. This property will set the alignment in the
+                 vertical. These are the possible properties:
+
+                 - 'start' - Aligns the content in the start point of the container
+                    in the vertical (top).
+
+                 - 'center' - Aligns the content in the center of the container
+                    based on the vertical.
+
+                 - 'end' - Aligns the content in the end point of the container
+                    in the horizontal (bottom).
+
+                 - 'space-between' - Aligns the first grid-row (and its grid-items)
+                    in the start point of the container (top), aligns the last
+                    grid-row (and its grid-items) in the end point of the container
+                    (bottom) and for the other middle grid-rows (and its grid-items),
+                    define a simetric space between them.
+
+                 - 'space-evenly' - Aligns all the grid-rows by defining simetric
+                    spaces between them (even between the first/last grid-rows 
+                    and edges and respective edges) in the vertical.
+
+                 - 'space-around' - Aligns all the grid-rows, defining a simetric
+                    space around all of them, when the first/last ones will
+                    have only the own space between them and the edges, while the
+                    middle grid-rows will have the own spaces summed to the spaces
+                    of the grid-rows above and bellow them, all of that following
+                    the vertical way.
+
+                 - 'stretch' - It will stretchs all the grid-rows in the vertical
+                    maintaining a simetric size for all, aimming to use all space
+                    available.
+
+                 - 'normal' (default) - Key value, automatically used 'stretch' config.
+
+              - 'justify-content' - This property defines the alignment of the
+                 content inside the container based on the container area, not
+                 focusing in individual grid-items, but in the all content at
+                 same time. This property will set the alignment in the horizontal.
+                 These are the possible values:
+
+                 - 'start' - Aligns the content in the start point of the container
+                    in the horizontal (left).
+
+                 - 'center' - Aligns the content in the center of the container,
+                    based on the horizontal.
+
+                 - 'end' - Aligns the content in the end point of the container in 
+                    the horizontal (right).
+
+                 - 'space-between' - Aligns the first grid-column (and its grid-items)
+                    in the start point of the container (left). aligns the last
+                    grid-column (and its grid-items) in the end point of the container
+                    (right) an for the other middle grid-rows (and its grid-items),
+                    defines a simetric space between them.
+
+                 - 'space-evenly' - Aligns all the grid-columns by defining simetric
+                    spaces between them (even between the first/last grid-columns
+                    and the respective edges) in the horizontal.
+
+                 - 'space-around' - Aligns all the grid-columns, defining a simetric
+                    space around all of them, when the first/last ones will have
+                    only their own space between them and the respective edges,
+                    while, the middle ones will have their own spaces summed to the
+                    spaces of the grid-columns at each side of them. All of that,
+                    following the horizontal way.
+
+                 - 'stretch' - It will stretchs all the grid-columns in the horizontal
+                    maintaining a simetric size for all, aimming ot use all space
+                    available.
+
+                 - 'normal' (default) - Key value, automatically used 'stretch' config.
         */
         div.container {
             display: grid;
             grid-template-columns: auto auto auto;
             grid-template-rows: auto auto auto;
+            align-items: normal;
+            justify-items: normal;
+            align-content: normal;
+            justify-content: normal;
             gap: 15px;
             border: 3px solid blue;
             height: 250px;
@@ -63,7 +185,7 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
-         <div class="item">H</div>
+        <div class="item">H</div>
     </div>
 </body>
 </html>

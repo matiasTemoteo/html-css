@@ -94,7 +94,7 @@ Alinhamento dos items na vertical:
 
  - Configurações:
 
-   - stretch (padrão): Estica os grid-items na vertical dentro da respectiva área do
+   - stretch: Estica os grid-items na vertical dentro da respectiva área do
      grid-item, até que eles colem nas extremidades, ocupando todo o espaço no
      sentido vertical.
 
@@ -107,6 +107,8 @@ Alinhamento dos items na vertical:
    - end: Posiciona os grid-items na posição end da respectiva área do grid-item
      tendo como base o sentido vertical (baixo).
 
+   - normal (padrão): Valor automático que usa a configuração stretch.
+
 
 Alinhamento dos items na horizontal:
 
@@ -118,7 +120,7 @@ Alinhamento dos items na horizontal:
 
  - Configurações:
 
-   - stretch (padrão) - Estica os gri-items na horizontal dentro da respectiva área
+   - stretch - Estica os gri-items na horizontal dentro da respectiva área
      do grid-item, até que eles colem nas extremidades, ocupando todo o espaço no
      sentido horizontal.
 
@@ -131,6 +133,8 @@ Alinhamento dos items na horizontal:
    - end: Posiciona os grid-items na posição end da respectiva área do grid-item
      na horizontal (direita).
 
+   - normal (padrão): Valor automático que usa a configuração stretch.
+
 
 Alinhamento do conteúdo na vertical:
 
@@ -142,7 +146,7 @@ Alinhamento do conteúdo na vertical:
 
  - Configurações:
 
-   - start (padrão) - Posiciona o conteúdo na posição start do container no
+   - start - Posiciona o conteúdo na posição start do container no
      sentido vertical (cima).
 
    - center: Posiciona o conteúdo no centro do container no sentido vertical.
@@ -172,6 +176,8 @@ Alinhamento do conteúdo na vertical:
      a ocupar todo o espaço no sentido vertical do container, onde as grid-rows serão
      dimensionadas simetricamente.
 
+   - normal (padrão): Valor automático que usa a configuração stretch.
+
 
 - Alinhamento do conteúdo na horizontal:
 
@@ -183,7 +189,7 @@ Alinhamento do conteúdo na vertical:
 
  - Configurações:
 
-   - start (padrão) - Posiciona o conteúdo na posição start do container no sentido
+   - start - Posiciona o conteúdo na posição start do container no sentido
      horizontal (esquerda)
 
    - center - Posiciona o conteúdo no centro do container no sentido horizontal.
@@ -212,3 +218,5 @@ Alinhamento do conteúdo na vertical:
    - stretch - Estica as grid-columns (e seus respectivos grid-items) de maneira a
      ocupar todo os espaço no sentido horizontal do container, onde as grid-columns
      serão dimensionadas simetricamente.
+
+   - normal (padrão): Valor automático que usa a configuração stretch.
