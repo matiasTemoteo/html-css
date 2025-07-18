@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../html-5.ico" type="image/x-icon">
+    <title>Grid Layout na Prática</title>
+    <style>
+        /*
+           There are other configurations in grid-layout used to handle
+           the behaviour of adicional items in gric container. They are
+           'grid-auto-rows' and 'grid-auto-columns'.
+
+           The rows and columns defined in the CSS declaration by
+           'grid-template' properties, are called explicit grid and
+           define the total count of the visual configured grid-items.
+           Example.: One grid with 3 rows and 3 columns have in total
+           9 grid-items that we call explicit items, but there is possible
+           have more than 9 items inside the container, so them will be called
+           inplicit items and will not be formatted following configurations.
+           But with the properties 'grid-auto-rows' and 'grid-auto-columns'
+           it is possible define how these new items will be handled.
+
+            - 'grid-auto-rows' - Define the size that will be used for
+               new rows added beyond the explicit grid-rows.
+
+               - Example:
+
+                 - grid-auto-rows: 100px;
+                 - grid-auto-rows: 50px;
+
+             - 'grid-auto-columns' - Define the size that will be used for
+                new columns added beyond the explicit grid-columns.
+
+                - Example:
+
+                  - grid-auto-columns: 150px;
+                  - grid-auto-columns: 100px;
+
+            There is another configuration used to define the flow of how
+            the grid-items will be displayed inside the container, that is
+            'grid-flow'. The possible values are:
+
+              - 'row' - The grid-items will be displayed in row, following
+                the grid-rows defines until the max items allowd by row (column count).
+                When complete the row, it will continue displayig items by the next
+                rows until have displayed all of them.
+
+              - 'column' - The grid-items will be displayed in column, following
+              the grid-columns defined until the max items allowd by column (row count).
+              When complete the column, it will contonue displaying items by the next
+              columns until have displayed all of them.
+
+
+            There is a usefull function to repeat values, that can be unsed in
+            properties like 'grid-temeplate' to simplify declarations. That is
+            'repeat()'. the syntax is 'repeat(x, value)' where 'x' is the count
+            of times the value will be added and 'value' is the value to be added
+            in the property.
+
+              - Examples:
+
+                - grid-template-rows: repeat(3, auto);
+                - grid-template-columns: repeat(4, 50px);
+
+
+            It is possible mix types of declarations for values, such as using
+            percentage, px or other typeof configurations.
+
+              - Examples:
+
+                - grid-template-rows: 100px repeat(2, 75px);
+
+
+            There is another size unity beyond 'px' or '%'' possible to be used
+            in grid-layout, this is 'fraction', declared as 'fr'. The fraction
+            will works defining a part of the container size (height or width
+            depending if is rows or columns being defined) for each grid-items
+            declared, where the fraction values of these items will be relative
+            between them. If a row declaration is 1fr 2fr 1fr, the first row
+            will get 1 fraction of the total, the second one will get 2 fractions
+            and will be two itmes bigger then the one and the third will get
+            1 fraction and will be as the first one.
+
+              - Examples:
+
+                - grid-template-rows: 1fr 2fr 1fr;
+                - grid-template-columns: 2fr 4fr 4fr;
+                - grid-template: 2fr 1fr / 3fr 3fr 3fr;
+
+            There is possible mix the declaration of rows and columns with
+            percentage, pixels or fractions. But when working with different
+            types including fractions, the fixed types will be considered first
+            and them the fractions will use as base only the rest of size left
+            after the other declarations (%, px, etc) being defined.
+            
+            So if there is the following declaration: 100px 25% 1fr 2fr for
+            rows in a container of 1000px of width, we'll have 4 rows declared.
+
+            The first one in px and second one in % will be considered first,
+            totalizing: 100px + (30% of 1000px = 300px) = 400px. After that,
+            the fractions will be considered, where the fraction values will
+            divided using only 600px because it is what left after the fixed
+            onws be considered.
+            
+            In this case, there are two items in fractions,  the first one as 1fr
+            and second one in 2fr, totalizing 3frs defined, each one will have
+            200px (600px / 3 = 200px).
+
+            The defintion of size will be:
+
+               1st fraction grid-item - 1fr = 200px;
+               2nd fraction grid-item - 2fr = 400px;
+
+             - Examples:
+
+               - grid-template-rows: 5fr 2fr 1fr;
+               - grid-template-columns: 25px 1fr 1fr 1fr;
+               - grid-template: 2fr 1fr 2fr / 100px 10% 1fr 1fr;
+
+        */
+        div.container {
+            display: grid;
+            grid-template: repeat(3, 100px) / repeat(3, auto);
+            grid-auto-flow: row;
+            grid-auto-rows: 100px;
+            grid-auto-columns: auto;
+            place-items: normal normal;
+            place-content: normal normal;
+            gap: 10px;
+            border: 3px solid blue;
+        }
+
+        div.item {
+            border: 3px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
