@@ -80,7 +80,7 @@ Configuração conjunta de grid-template-rows e grid-template-columns:
 
  - Short-hand
 
- - grid-template: 'grid-template-rows' 'grid-template-columns'
+ - grid-template: 'grid-template-rows' / 'grid-template-columns'
 
  - Exemplos:
 
