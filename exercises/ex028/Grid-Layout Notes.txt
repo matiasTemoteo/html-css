@@ -72,6 +72,22 @@ Definindo as Linhas do Grid (horizontal):
      posição. Exemplo: Linha 1 - 30px, linha 2 - 90px, linha 4 - 40px.
 
 
+Configuração conjunta de grid-template-rows e grid-template-columns:
+
+ - grid-template
+
+ - Configuração do container (pai)
+
+ - Short-hand
+
+ - grid-template: 'grid-template-rows' 'grid-template-columns'
+
+ - Exemplos:
+
+   - grid-template: 100px 100px / 50px 50px;
+   - grid-template: 60px 60px 70px / 100px 50px;
+
+
 Definindo o Gap entre os Grid-items:
 
  - grid-gap (obsoleto) | gap (atual)
@@ -134,6 +150,22 @@ Alinhamento dos items na horizontal:
      na horizontal (direita).
 
    - normal (padrão): Valor automático que usa a configuração stretch.
+
+
+Configuração conjunta do align-items e justify-items:
+
+ - place-items
+
+ - Propriedade do container (pai)
+
+ - Short-hand
+
+ - place-items: 'align-items' 'justify-content'
+
+ - Exemplos:
+
+   - place-items: start stretch;
+   - place-items: center end;
 
 
 Alinhamento do conteúdo na vertical:
@@ -220,3 +252,50 @@ Alinhamento do conteúdo na vertical:
      serão dimensionadas simetricamente.
 
    - normal (padrão): Valor automático que usa a configuração stretch.
+
+
+Configuração conjunta do align-content e justify-content:
+
+ - place-content
+
+ - Configuração do container (pai)
+
+ - Short-hand
+
+ - place-content: 'align-content' 'justify-content'
+
+ - Exemplos:
+
+   - place-content: start end;
+   - place-content: space-evenly space-around;
+   - place-content: center normal;
+
+
+Configurando linhas adicionais automáticas:
+
+ - grid-auto-row
+
+ - Propriedade do container (pai)
+
+ - Define o tamanho que uma possível linha (grid-row) adicional terá
+
+ - Configuração:
+
+   - Valor em px: Um único valor que irá ser considerado para toda
+     grid-row adicional não explicitada através do 'grid-template-rows'.
+
+
+Configurando colunas adicionais automáticas:
+
+ - grid-auto-column
+
+ - Propriedade do container (pai)
+
+ - Define o tamanho que uma possível coluna (grid-column) terá
+
+ - Configuração:
+
+   - Valor em px: Um único valor que irá ser considerado para toda
+     grid-column adicional não explicitada através do 'grid-template-column'.
+
+
