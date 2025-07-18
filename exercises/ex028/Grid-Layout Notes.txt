@@ -299,3 +299,59 @@ Configurando colunas adicionais automáticas:
      grid-column adicional não explicitada através do 'grid-template-column'.
 
 
+Simplificação na declaração de grid-template-rows e grid-template-columns:
+
+ - repeat()
+
+ - Função
+
+ - Repeat(x, size)
+   - x = número de repetições,
+     size = tamanho da respectiva row ou column
+
+ - Exemplos:
+
+   - grid-template-rows: repeat(3, 50px);
+   - grid-template-rows: repeat(2, 25px);
+
+   - grid-template-columns: repeat(4, 150px);
+   - grid-template-columns: repeat(2, 100px);
+
+   - grid-template: repeat(2, 30px) / repeat(3, 50px);
+
+
+ Usando fractions para definir rows e columns no container:
+
+  - Fraction
+
+  - Unidade: fr
+
+  - Os valores de fração podem ser usados para definir as rows ou colunas
+    de um grid template, da mesma forma como o px ou % onde cada número de fração
+    adicionado será uma row ou coluna nova. Porém no caso das frações, o tamanho
+    que cada row ou coluna terá será relativ, da seguinte forma:
+
+     - As frações são unitárias, porém podem ser definidas em qualquer valor
+       númerico, como 1fr, 2fr ou 5fr. Nesse caso, teríamos 3 row/columns onde
+       a primeira ocuparia 1 fração do todo, a segunda, 2 frações do todo e a
+       terceira, 5 frações do todo.
+
+  - Exemplos:
+
+    - grid-template-rows: 1fr 1fr;
+    - grid-template-columns: 2fr 2fr 4fr;
+    - grid-template: repeat(2, 1fr) / repeat(3, 2fr);
+
+
+  - É possível misturar unidades diferentes na delcaração das rows e colunas,
+      onde as rows/columns definidas em unidades diferentes de fração serão
+      configuradas com o valor indicado tendo como baso o todo, enquanto os
+      valores indicados como fração serão configurados tendo como base somente
+      o tamanho restante após a definição dos demais valores não fracionários.
+
+  - Exemplos:
+
+    - grid-template-rows: 50px 1fr 2fr;
+    - grid-template-columns: 100px 15% 1fr;
+    - grid-template: 30% 10% 1fr 1fr 2fr / 100px 50px 1fr 1fr;
+    - grid-template: 70px repeat(2, 1fr) / 15% 2fr repeat(2, 1fr), 50px;
