@@ -424,3 +424,81 @@ Configurando a área dos items no container grid-layout:
        de largura. (Nesse exemplo, o valor -2 do row-end refere-se à linha
        vertical 4, pois em um template com 5 linhas verticais, a quinta seria
        a -1 e assim a quarta fica sendo a -2).
+
+
+Indicando expansão na configuração das área do item:
+
+ - span
+
+ - Pode ser utilizado nas seguintes propriedades:
+   - grid-row-end;
+   - grid-columns-end;
+
+ - É utilizado para informar uma espansão da área que já tem o início
+   indicado. O valor indicado no span definira linha final da área, seja
+   ela vertical ou horizontal, de forma que o valor informado seja conectado
+   a partir do valor do start já informado.
+
+   Exemplos:
+
+     - grid-row-start: 1;
+       grid-row-end: span 1;
+
+       * Nesse exemplo, a área na vertical, começa na linha 1 e termina na
+         linha 2. (1 + 1 = 2).
+
+     - grid-column-start: 2;
+       grid-column-end: span 3;
+
+       * Nesse exemplo, a área na horizontal começa na coluna 2 e termina
+         na coluna 5 (2 + 3 = 5).
+
+
+Configuração conjunta de grid-row-start e grid-row-end:
+
+  - grid-row
+
+  - Configuração nos items (filhos)
+
+  - Short-hand
+
+  - grid-row: 'grid-row-start' / 'grid-row-end'
+
+  Exemplos:
+
+    - grid-row: 1 / 2;
+    - grid-row: 2 / 5;
+    - grid-row: 3 / span 3;
+
+
+Configuração conjunta de grid-column-start e grid-column-end:
+
+ - grid-column
+
+ - Configuração nos items (filhos)
+
+ - Short-hand
+
+ - grid-column: 'grid-column-start' / 'grid-column-end'
+
+  Exemplos:
+
+    - grid-column: 2 / 3;
+    - grid-column: 1 / 5;
+    - grid-column: 2 / span 2;
+
+
+Configuração conjunta de grid-row-start, grid-column-start, grid-row-end e grid-column-end:
+
+ - grid-area
+
+ - Configuração nos items (filhos)
+
+ - Short-hand
+
+ - grid-area: 'grid-row-start' / 'grid-column-start' / 'grid-row-end' / 'grid-column-end'
+
+ - Exemplos:
+
+   - grid-area: 1 / 1 / 3 / 2; 
+   - grid-area: 2 / 1 / 5 / 6; 
