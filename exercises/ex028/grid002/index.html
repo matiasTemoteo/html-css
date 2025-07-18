@@ -7,16 +7,41 @@
     <title>Grid Layout na Prática</title>
     <style>
         /*
-         
+            In grid-layout, there are ways to simplify declarations using
+            short-hands, such as:
+
+             - 'grid-template' - Declaration for 'grid-template-rows'
+                and 'grid-template-columns' in a unique declaration.
+                The order is rows > columns. The values for rows and
+                columns are separated by '/'.
+
+                Examples:
+
+                 - grid-template: 100px 100px / 50px 50px;
+                 - grid-template: auto auto auto / auto auto;
+
+             - 'place-items' - Declaration for 'align-items' and 'justify-items'
+                in a unique declaration. The order is align-items > justify-items.
+
+                Examples:
+
+                 - place-items: center start;
+                 - place-items: end stretch;
+
+             - 'place-content' - Declarations for 'align-content' and
+                'justify-content' in a unique declaration. The order is
+                align-items > justify-items.
+
+                Examples:
+
+                 - place-content: stretch space-bwtween;
+                 - place-content: center normal;
         */
         div.container {
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+            grid-template: repeat(3, auto) / repeat(3, auto);
+            place-items: start center;
+            place-content: space-between end;
             gap: 15px;
             border: 3px solid blue;
             height: 250px;
