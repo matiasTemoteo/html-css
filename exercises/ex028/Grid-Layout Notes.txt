@@ -7,8 +7,8 @@ Anatomia de um Grid:
  - Grid Items: Item formado pelo espaço das interceções das grades
 
  - Grid Track: Linha/trilha que se extende por todos os Grid Items em uma direção
-   - Row Track - Grid Track na horizontal
-   - Column track - Grid Track na vertical
+   - Row Track - Grid Track na horizontal (grid-row)
+   - Column track - Grid Track na vertical (grid-column)
  
  - Grid Lines: As linhas que definem as grades do container
    - Grid Lines Veticais - Definem as Column Tracks
@@ -299,6 +299,24 @@ Configurando colunas adicionais automáticas:
      grid-column adicional não explicitada através do 'grid-template-column'.
 
 
+Definindo o fluxo dos items dentro do container:
+
+ - grid-flow
+
+ - Configuração do container (pai)
+
+ - Define qual será o fluxo com o qual os items serão dispostos dentro
+   do container.
+
+ - Configurações:
+
+   - row (padrão): Os items erão dispostos em linha (horizontal), onde ao terminar
+     a linha atual, pula para a próxima até dispor todos os items.
+
+   - column: Os items serão dispostos em coluna (vertical), onde ao terminar
+     a coluna atual, pula para a próxima a´te dispor todos os items.
+
+
 Simplificação na declaração de grid-template-rows e grid-template-columns:
 
  - repeat()
@@ -320,7 +338,7 @@ Simplificação na declaração de grid-template-rows e grid-template-columns:
    - grid-template: repeat(2, 30px) / repeat(3, 50px);
 
 
- Usando fractions para definir rows e columns no container:
+Usando fractions para definir rows e columns no container:
 
   - Fraction
 
@@ -355,3 +373,54 @@ Simplificação na declaração de grid-template-rows e grid-template-columns:
     - grid-template-columns: 100px 15% 1fr;
     - grid-template: 30% 10% 1fr 1fr 2fr / 100px 50px 1fr 1fr;
     - grid-template: 70px repeat(2, 1fr) / 15% 2fr repeat(2, 1fr), 50px;
+
+
+Configurando a área dos items no container grid-layout:
+
+ - grid-row-start
+ - grid-row-end
+ - grid-column-start
+ - grid-column-end
+
+ - Configuração nos items (filhos)
+
+ - Define a partir de quatro pontos as dimensões da área a ser
+   ocupada pelo item, usando as grid-lines verticais e horizontais
+   como base para os respectivos pontos.
+
+ - As propriedades acima, referen-se as linhas verticais e horizontais
+   que definem as grid-rows e grid-columns e não às proprias grid-rows e
+   grid-columns.
+
+ - As propriedades 'grid-row-start' e 'grid-row-end' definem as linhas
+   superior e inferior da área, delimitando assim sua altura e posição
+   vertical dentro do container, enquanto as propriedades 'grid-column-start'
+   e 'grid-column-end' definem as linhas lateral-esquerda e lateral-direita
+   da área, delimitando assim sua largura e posição horizontal dentro do
+   container. As quatro propriedades juntas definem por fim o tamanho e
+   área total a ser ocupada pelo respectivo item dentro do container.
+
+ - Os valores para as propriedades são somente numéricos e seguem a ordenação
+   das linhas, podendo usar o sentido normal (1, 2, 3 ... n) ou o sentido
+   inverso (-1, -2, -3, ... -n).
+
+ - Exemplos:
+
+   - grid-row-start: 1;
+     grid-row-end: 2;
+     grid-column-start: 1;
+     grid-column-end: 2;
+
+     * Esse exemplo define uma área com uma grid-row de altura e uma
+       grid-column de largura.
+
+   - grid-row-start: 2;
+     grid-row-end: -2;
+     grid-column-start: 3;
+     grid-column-end: 5;
+
+     * Esse exemplo, em um container com 5 grid-rows e 6 grid-columns,
+       definiria uma área com duas grid-rows de altura e duas grid-columns
+       de largura. (Nesse exemplo, o valor -2 do row-end refere-se à linha
+       vertical 4, pois em um template com 5 linhas verticais, a quinta seria
+       a -1 e assim a quarta fica sendo a -2).
